@@ -1,0 +1,5674 @@
+{
+    "players": [
+        {
+            "name": "G20J26", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G17J9", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G2J11", 
+            "stats": {
+                "force": 3.2, 
+                "intelligence": 3.0, 
+                "somme": 10.6, 
+                "vitesse": 4.4
+            }
+        }, 
+        {
+            "name": "G2J10", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 7.7, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G2J13", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 0.3, 
+                "somme": 10.2, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G2J12", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 4.8, 
+                "somme": 13.5, 
+                "vitesse": 3.5
+            }
+        }, 
+        {
+            "name": "G2J15", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 13.0, 
+                "vitesse": 9.3
+            }
+        }, 
+        {
+            "name": "G2J14", 
+            "stats": {
+                "force": 7.2, 
+                "intelligence": 2.8, 
+                "somme": 12.3, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G2J17", 
+            "stats": {
+                "force": 7.2, 
+                "intelligence": 5.5, 
+                "somme": 14.1, 
+                "vitesse": 1.4
+            }
+        }, 
+        {
+            "name": "G2J16", 
+            "stats": {
+                "force": 8.8, 
+                "intelligence": 2.4, 
+                "somme": 17.4, 
+                "vitesse": 6.2
+            }
+        }, 
+        {
+            "name": "G2J19", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 6.3, 
+                "somme": 21.4, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G2J18", 
+            "stats": {
+                "force": 3.6, 
+                "intelligence": 7.2, 
+                "somme": 19.8, 
+                "vitesse": 9.0
+            }
+        }, 
+        {
+            "name": "G19J27", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G19J26", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G8J28", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 12.9, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J29", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 9.2, 
+                "somme": 26.0, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G8J22", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 10.1, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G8J23", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 5.3, 
+                "somme": 18.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G8J20", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 8.6, 
+                "somme": 14.8, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G8J21", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 4.4, 
+                "somme": 18.3, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G8J26", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 22.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J27", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 7.0, 
+                "somme": 14.3, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G8J24", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 1.9, 
+                "somme": 12.0, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G8J25", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 7.0, 
+                "somme": 18.0, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G11J2", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 2.6, 
+                "somme": 14.7, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G11J3", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 23.7, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J0", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 21.3, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G11J1", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 1.9, 
+                "somme": 11.5, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J6", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 2.6, 
+                "somme": 11.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J7", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J4", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 16.6, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J5", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 1.9, 
+                "somme": 12.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J8", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J9", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 21.3, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G13J0", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 8.5, 
+                "somme": 16.2, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G13J1", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 14.9, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G13J2", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.9, 
+                "somme": 14.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J3", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 17.5, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G13J4", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 8.5, 
+                "somme": 16.2, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G13J5", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 4.4, 
+                "somme": 14.3, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G13J6", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 13.9, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J7", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.5, 
+                "somme": 14.4, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J8", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 8.6, 
+                "somme": 21.1, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G13J9", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 8.5, 
+                "somme": 12.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G1J6", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 1.4, 
+                "somme": 12.5, 
+                "vitesse": 9.8
+            }
+        }, 
+        {
+            "name": "G1J7", 
+            "stats": {
+                "force": 5.0, 
+                "intelligence": 1.7, 
+                "somme": 13.5, 
+                "vitesse": 6.8
+            }
+        }, 
+        {
+            "name": "G1J4", 
+            "stats": {
+                "force": 1.4, 
+                "intelligence": 2.5, 
+                "somme": 11.5, 
+                "vitesse": 7.6
+            }
+        }, 
+        {
+            "name": "G1J5", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G1J2", 
+            "stats": {
+                "force": 1.6, 
+                "intelligence": 7.1, 
+                "somme": 15.7, 
+                "vitesse": 7.0
+            }
+        }, 
+        {
+            "name": "G1J3", 
+            "stats": {
+                "force": 1.0, 
+                "intelligence": 1.3, 
+                "somme": 9.6, 
+                "vitesse": 7.3
+            }
+        }, 
+        {
+            "name": "G1J0", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 1.1, 
+                "somme": 11.3, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G1J1", 
+            "stats": {
+                "force": 5.3, 
+                "intelligence": 1.8, 
+                "somme": 9.4, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G20J14", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J15", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J16", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 15.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J17", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J10", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J11", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G1J8", 
+            "stats": {
+                "force": 2.8, 
+                "intelligence": 3.0, 
+                "somme": 10.2, 
+                "vitesse": 4.4
+            }
+        }, 
+        {
+            "name": "G1J9", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 2.4, 
+                "somme": 15.6, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J12", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G13J21", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 20.9, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G7J0", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 5.3, 
+                "somme": 12.5, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G7J1", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 1.8, 
+                "somme": 10.2, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G7J2", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 4.4, 
+                "somme": 16.2, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G7J3", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 8.7, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G7J4", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 1.1, 
+                "somme": 14.5, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G7J5", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.6, 
+                "somme": 18.7, 
+                "vitesse": 6.2
+            }
+        }, 
+        {
+            "name": "G7J6", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 1.8, 
+                "somme": 17.3, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G7J7", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 5.3, 
+                "somme": 12.9, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G1J14", 
+            "stats": {
+                "force": 1.6, 
+                "intelligence": 3.5, 
+                "somme": 9.9, 
+                "vitesse": 4.8
+            }
+        }, 
+        {
+            "name": "G7J9", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 1.8, 
+                "somme": 11.8, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G1J16", 
+            "stats": {
+                "force": 1.2, 
+                "intelligence": 3.0, 
+                "somme": 7.2, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G1J17", 
+            "stats": {
+                "force": 3.6, 
+                "intelligence": 8.8, 
+                "somme": 16.3, 
+                "vitesse": 3.9
+            }
+        }, 
+        {
+            "name": "G1J10", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 1.5, 
+                "somme": 13.7, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G1J11", 
+            "stats": {
+                "force": 10.0, 
+                "intelligence": 4.6, 
+                "somme": 22.8, 
+                "vitesse": 8.2
+            }
+        }, 
+        {
+            "name": "G1J12", 
+            "stats": {
+                "force": 7.2, 
+                "intelligence": 4.6, 
+                "somme": 18.7, 
+                "vitesse": 6.9
+            }
+        }, 
+        {
+            "name": "G1J13", 
+            "stats": {
+                "force": 7.2, 
+                "intelligence": 5.0, 
+                "somme": 13.6, 
+                "vitesse": 1.4
+            }
+        }, 
+        {
+            "name": "G20J13", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.0, 
+                "somme": 21.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G16J11", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 6.7, 
+                "somme": 17.6, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J10", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 14.9, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J13", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 16.3, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G16J12", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 8.6, 
+                "somme": 21.1, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G16J15", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 16.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J14", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 19.5, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J17", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 1.7, 
+                "somme": 13.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G16J16", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G16J19", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 19.4, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J18", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.4, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J1", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G15J25", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 22.0, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J24", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 18.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G15J27", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 18.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G15J26", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G15J21", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 19.4, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J20", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G15J23", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 6.7, 
+                "somme": 20.2, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J22", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 6.7, 
+                "somme": 20.2, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G19J2", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G19J3", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J0", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G19J1", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G15J29", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J28", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 17.5, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G19J4", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J5", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J8", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.2, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G19J9", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.0, 
+                "somme": 19.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G10J17", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 20.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G10J16", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J15", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G10J14", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G10J13", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 7.0, 
+                "somme": 14.3, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J12", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 8.9, 
+                "somme": 18.9, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G10J11", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 0.2, 
+                "somme": 8.3, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J10", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 0.2, 
+                "somme": 14.5, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G10J19", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 16.6, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G10J18", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 16.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G19J6", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J7", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G1J50", 
+            "stats": {
+                "force": 6.4, 
+                "intelligence": 3.4, 
+                "somme": 16.1, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G1J51", 
+            "stats": {
+                "force": 6.6, 
+                "intelligence": 9.1, 
+                "somme": 17.7, 
+                "vitesse": 2.0
+            }
+        }, 
+        {
+            "name": "G1J52", 
+            "stats": {
+                "force": 6.1, 
+                "intelligence": 7.5, 
+                "somme": 20.9, 
+                "vitesse": 7.3
+            }
+        }, 
+        {
+            "name": "G1J53", 
+            "stats": {
+                "force": 2.6, 
+                "intelligence": 1.2, 
+                "somme": 11.1, 
+                "vitesse": 7.3
+            }
+        }, 
+        {
+            "name": "G1J54", 
+            "stats": {
+                "force": 9.4, 
+                "intelligence": 1.6, 
+                "somme": 15.3, 
+                "vitesse": 4.3
+            }
+        }, 
+        {
+            "name": "G1J55", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 4.8, 
+                "somme": 11.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G1J56", 
+            "stats": {
+                "force": 7.8, 
+                "intelligence": 0.6, 
+                "somme": 16.3, 
+                "vitesse": 7.9
+            }
+        }, 
+        {
+            "name": "G1J57", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 1.1, 
+                "somme": 16.6, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G1J58", 
+            "stats": {
+                "force": 3.7, 
+                "intelligence": 2.3, 
+                "somme": 14.1, 
+                "vitesse": 8.1
+            }
+        }, 
+        {
+            "name": "G1J59", 
+            "stats": {
+                "force": 1.0, 
+                "intelligence": 7.6, 
+                "somme": 18.6, 
+                "vitesse": 10.0
+            }
+        }, 
+        {
+            "name": "G1J25", 
+            "stats": {
+                "force": 4.5, 
+                "intelligence": 5.4, 
+                "somme": 13.4, 
+                "vitesse": 3.5
+            }
+        }, 
+        {
+            "name": "G1J24", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 8.9, 
+                "somme": 21.6, 
+                "vitesse": 4.0
+            }
+        }, 
+        {
+            "name": "G1J27", 
+            "stats": {
+                "force": 9.5, 
+                "intelligence": 0.3, 
+                "somme": 14.5, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G1J26", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 6.5, 
+                "somme": 17.6, 
+                "vitesse": 5.3
+            }
+        }, 
+        {
+            "name": "G1J21", 
+            "stats": {
+                "force": 8.5, 
+                "intelligence": 1.9, 
+                "somme": 20.0, 
+                "vitesse": 9.6
+            }
+        }, 
+        {
+            "name": "G1J20", 
+            "stats": {
+                "force": 2.3, 
+                "intelligence": 4.9, 
+                "somme": 15.2, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G1J23", 
+            "stats": {
+                "force": 2.0, 
+                "intelligence": 2.8, 
+                "somme": 9.2, 
+                "vitesse": 4.4
+            }
+        }, 
+        {
+            "name": "G1J22", 
+            "stats": {
+                "force": 2.0, 
+                "intelligence": 6.5, 
+                "somme": 10.8, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G19J29", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J28", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G1J29", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 14.6, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G1J28", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 7.7, 
+                "somme": 14.2, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G17J29", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G17J28", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 22.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G17J27", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 22.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G17J26", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 20.3, 
+                "vitesse": 7.4
+            }
+        }, 
+        {
+            "name": "G17J25", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.2, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G17J24", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 20.1, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G17J23", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G17J22", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 21.4, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G17J21", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G17J20", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 20.3, 
+                "vitesse": 7.4
+            }
+        }, 
+        {
+            "name": "G4J28", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 1.7, 
+                "somme": 12.0, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G4J29", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 4.9, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J26", 
+            "stats": {
+                "force": 9.0, 
+                "intelligence": 7.0, 
+                "somme": 18.6, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G4J27", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 3.4, 
+                "somme": 8.5, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J24", 
+            "stats": {
+                "force": 5.3, 
+                "intelligence": 6.3, 
+                "somme": 14.8, 
+                "vitesse": 3.2
+            }
+        }, 
+        {
+            "name": "G4J25", 
+            "stats": {
+                "force": 6.6, 
+                "intelligence": 5.5, 
+                "somme": 13.3, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J22", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 3.4, 
+                "somme": 16.1, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G4J23", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 3.4, 
+                "somme": 9.8, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G4J20", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.8, 
+                "somme": 10.1, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J21", 
+            "stats": {
+                "force": 5.3, 
+                "intelligence": 7.0, 
+                "somme": 13.9, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G10J28", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G10J29", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 7.8, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G10J26", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 24.2, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G10J27", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 20.8, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G10J24", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G10J25", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 21.9, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G10J22", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J23", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 16.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J20", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J21", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J8", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 9.2, 
+                "somme": 17.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G9J9", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G9J6", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 20.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G9J7", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J4", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 22.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J5", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.6, 
+                "somme": 21.2, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J2", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 1.8, 
+                "somme": 18.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G9J3", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 9.2, 
+                "somme": 14.7, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G9J0", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G7J8", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 9.2, 
+                "somme": 23.1, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G13J23", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 7.8, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G7J18", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 7.0, 
+                "somme": 12.4, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G7J19", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 6.3, 
+                "somme": 18.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G13J22", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 19.5, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G7J12", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.8, 
+                "somme": 17.6, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G7J13", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.1, 
+                "somme": 15.3, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G7J10", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 1.1, 
+                "somme": 12.9, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G7J11", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 7.0, 
+                "somme": 17.0, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G7J16", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 12.1, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G7J17", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 1.1, 
+                "somme": 15.2, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G7J14", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 8.6, 
+                "somme": 14.8, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G7J15", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 1.1, 
+                "somme": 15.2, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G13J20", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 0.1, 
+                "somme": 7.3, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J27", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 4.4, 
+                "somme": 13.0, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G13J26", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 1.8, 
+                "somme": 9.5, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G13J25", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J24", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J29", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.1, 
+                "somme": 19.0, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G13J28", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 4.4, 
+                "somme": 13.0, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G8J17", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 0.2, 
+                "somme": 17.0, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G8J16", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 9.2, 
+                "somme": 23.1, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G8J15", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 8.0, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G8J14", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 0.3, 
+                "somme": 12.4, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G8J13", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 7.2, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G8J12", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 4.4, 
+                "somme": 19.9, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J11", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 7.0, 
+                "somme": 11.0, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G8J10", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 22.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J19", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 1.8, 
+                "somme": 12.3, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G8J18", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 1.8, 
+                "somme": 9.5, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G12J5", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G12J4", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 18.4, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J7", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 18.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J6", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.5, 
+                "somme": 17.1, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J1", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J0", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 8.6, 
+                "somme": 23.1, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G12J3", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G12J2", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.6, 
+                "somme": 14.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J9", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 14.6, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J8", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G6J24", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 14.2, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G6J25", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 6.3, 
+                "somme": 14.5, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G6J26", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 8.5, 
+                "somme": 21.9, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G6J27", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.6, 
+                "somme": 21.2, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G6J20", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 1.9, 
+                "somme": 16.0, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G6J21", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 6.3, 
+                "somme": 16.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G6J22", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 20.3, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G6J23", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 9.4, 
+                "somme": 23.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G6J28", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 9.2, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G6J29", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 1.1, 
+                "somme": 8.7, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G14J3", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 17.5, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G14J2", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G14J1", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 8.6, 
+                "somme": 21.1, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G14J0", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G14J7", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J6", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 19.5, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G14J5", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 8.6, 
+                "somme": 12.6, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J4", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.1, 
+                "somme": 19.0, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G14J9", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 7.8, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G14J8", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 13.9, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G18J7", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J6", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G18J5", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J4", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.0, 
+                "somme": 19.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G18J3", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 16.3, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J2", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J1", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J0", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J9", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 17.8, 
+                "vitesse": 7.4
+            }
+        }, 
+        {
+            "name": "G18J8", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 16.3, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G11J27", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G16J28", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 19.4, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J29", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 18.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G16J24", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G16J25", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 19.4, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J26", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 16.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J27", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G16J20", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 16.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J21", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 14.9, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J22", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 16.8, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J23", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 0.1, 
+                "somme": 8.3, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G11J26", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G17J17", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J14", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 19.5, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J15", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 23.6, 
+                "vitesse": 7.4
+            }
+        }, 
+        {
+            "name": "G17J12", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J13", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J10", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.2, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G17J11", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 18.7, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J18", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J19", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 22.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G15J10", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 17.5, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J11", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G15J12", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 19.4, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J13", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G15J14", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J15", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 18.4, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G15J16", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J17", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 22.1, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J18", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 22.0, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J19", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 20.9, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G19J13", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G5J26", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 14.2, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G12J15", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 18.8, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J14", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.6, 
+                "somme": 14.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J17", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 18.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J16", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G12J11", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 10.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G12J10", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J13", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 1.9, 
+                "somme": 12.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J12", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 1.9, 
+                "somme": 11.5, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G1J32", 
+            "stats": {
+                "force": 1.5, 
+                "intelligence": 6.9, 
+                "somme": 14.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G12J19", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 4.4, 
+                "somme": 14.3, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J18", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 8.9, 
+                "somme": 19.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G1J33", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 4.6, 
+                "somme": 11.0, 
+                "vitesse": 3.3
+            }
+        }, 
+        {
+            "name": "G19J14", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 15.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G19J15", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J16", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G14J13", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 16.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G19J17", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G14J12", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 7.8, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G19J10", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J11", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G20J8", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J9", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G6J13", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.1, 
+                "somme": 15.3, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G20J2", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J3", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J0", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G1J39", 
+            "stats": {
+                "force": 3.4, 
+                "intelligence": 5.6, 
+                "somme": 12.6, 
+                "vitesse": 3.6
+            }
+        }, 
+        {
+            "name": "G20J6", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J7", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J4", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J5", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J18", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 24.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G14J19", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G20J19", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G14J18", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G1J36", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 1.9, 
+                "somme": 17.0, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G1J37", 
+            "stats": {
+                "force": 7.2, 
+                "intelligence": 6.7, 
+                "somme": 16.1, 
+                "vitesse": 2.2
+            }
+        }, 
+        {
+            "name": "G1J34", 
+            "stats": {
+                "force": 8.8, 
+                "intelligence": 2.4, 
+                "somme": 17.4, 
+                "vitesse": 6.2
+            }
+        }, 
+        {
+            "name": "G1J35", 
+            "stats": {
+                "force": 6.1, 
+                "intelligence": 2.7, 
+                "somme": 15.4, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G6J19", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 2.6, 
+                "somme": 11.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G6J18", 
+            "stats": {
+                "force": 9.5, 
+                "intelligence": 8.5, 
+                "somme": 19.6, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G1J30", 
+            "stats": {
+                "force": 9.8, 
+                "intelligence": 10.0, 
+                "somme": 28.1, 
+                "vitesse": 8.3
+            }
+        }, 
+        {
+            "name": "G1J31", 
+            "stats": {
+                "force": 5.3, 
+                "intelligence": 9.0, 
+                "somme": 17.5, 
+                "vitesse": 3.2
+            }
+        }, 
+        {
+            "name": "G6J15", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 15.8, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G6J14", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 3.4, 
+                "somme": 12.0, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G6J17", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 7.7, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G6J16", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.1, 
+                "somme": 13.2, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G6J11", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 15.8, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G6J10", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 8.5, 
+                "somme": 18.6, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G1J38", 
+            "stats": {
+                "force": 7.2, 
+                "intelligence": 2.8, 
+                "somme": 12.3, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G6J12", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 8.9, 
+                "somme": 16.5, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G4J9", 
+            "stats": {
+                "force": 6.4, 
+                "intelligence": 3.4, 
+                "somme": 16.1, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G4J8", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.6, 
+                "somme": 22.0, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G4J7", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 9.8, 
+                "somme": 23.2, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G4J6", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 3.4, 
+                "somme": 17.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G4J5", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 4.9, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J4", 
+            "stats": {
+                "force": 5.3, 
+                "intelligence": 9.0, 
+                "somme": 15.5, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J3", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 9.2, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G4J2", 
+            "stats": {
+                "force": 9.0, 
+                "intelligence": 0.7, 
+                "somme": 10.9, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J1", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 4.9, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J0", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 3.4, 
+                "somme": 16.5, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G6J9", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 1.8, 
+                "somme": 13.7, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G6J8", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 9.4, 
+                "somme": 12.7, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G6J5", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 4.4, 
+                "somme": 12.8, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G6J4", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 1.8, 
+                "somme": 15.6, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G6J7", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 4.4, 
+                "somme": 13.0, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G6J6", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 1.8, 
+                "somme": 10.2, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G6J1", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 1.8, 
+                "somme": 12.0, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G6J0", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 1.8, 
+                "somme": 11.8, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G6J3", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 0.2, 
+                "somme": 6.5, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G6J2", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 8.5, 
+                "somme": 20.4, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G4J19", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 3.4, 
+                "somme": 10.7, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G4J18", 
+            "stats": {
+                "force": 2.8, 
+                "intelligence": 3.0, 
+                "somme": 10.5, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G4J13", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 3.4, 
+                "somme": 13.0, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J12", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 1.8, 
+                "somme": 10.4, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G4J11", 
+            "stats": {
+                "force": 9.0, 
+                "intelligence": 8.5, 
+                "somme": 18.7, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J10", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 0.3, 
+                "somme": 10.6, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G4J17", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 3.4, 
+                "somme": 13.0, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G4J16", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 4.4, 
+                "somme": 15.4, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G4J15", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 8.5, 
+                "somme": 18.2, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G4J14", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.8, 
+                "somme": 11.9, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G11J29", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 21.3, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G7J26", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 4.4, 
+                "somme": 13.0, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G7J25", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 1.1, 
+                "somme": 16.6, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G7J24", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 14.6, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G7J23", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.1, 
+                "somme": 13.2, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G7J22", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 4.4, 
+                "somme": 11.6, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G7J21", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 1.8, 
+                "somme": 9.5, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G7J20", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 1.8, 
+                "somme": 17.3, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J21", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.5, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G11J20", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 22.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J23", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 23.7, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J22", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 22.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J25", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 16.6, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J24", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 0.2, 
+                "somme": 15.2, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G7J29", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 1.1, 
+                "somme": 12.5, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G7J28", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 20.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G19J24", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G18J19", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G18J18", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.4, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G18J17", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G18J16", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J15", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J14", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 16.3, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J13", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J12", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J11", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G18J10", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G9J14", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 0.2, 
+                "somme": 10.2, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J15", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G9J16", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 1.8, 
+                "somme": 17.3, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J17", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 19.4, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G9J10", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G9J11", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 9.2, 
+                "somme": 23.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J12", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 9.2, 
+                "somme": 17.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G9J13", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 20.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G9J18", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 8.9, 
+                "somme": 27.3, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J19", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 9.2, 
+                "somme": 25.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G16J9", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G16J8", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G16J1", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 23.6, 
+                "vitesse": 7.4
+            }
+        }, 
+        {
+            "name": "G16J0", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 16.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G16J3", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G16J2", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G16J5", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 9.5, 
+                "somme": 24.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G16J4", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 6.7, 
+                "somme": 19.2, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G16J7", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G16J6", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 14.9, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G19J18", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 15.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G19J19", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 15.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G10J9", 
+            "stats": {
+                "force": 7.4, 
+                "intelligence": 0.2, 
+                "somme": 16.3, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G10J8", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 1.8, 
+                "somme": 11.8, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G10J7", 
+            "stats": {
+                "force": 7.4, 
+                "intelligence": 0.2, 
+                "somme": 11.8, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G10J6", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 1.8, 
+                "somme": 12.9, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G10J5", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 11.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G10J4", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 1.8, 
+                "somme": 10.4, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G10J3", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 7.8, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G10J2", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 1.9, 
+                "somme": 15.7, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G10J1", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 0.2, 
+                "somme": 15.2, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G10J0", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 21.3, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G3J18", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 4.9, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G3J19", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 7.7, 
+                "somme": 15.9, 
+                "vitesse": 3.5
+            }
+        }, 
+        {
+            "name": "G3J16", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 8.5, 
+                "somme": 21.9, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G3J17", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 8.9, 
+                "somme": 24.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G3J14", 
+            "stats": {
+                "force": 6.6, 
+                "intelligence": 1.7, 
+                "somme": 9.7, 
+                "vitesse": 1.4
+            }
+        }, 
+        {
+            "name": "G3J15", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 8.5, 
+                "somme": 14.4, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G3J12", 
+            "stats": {
+                "force": 9.5, 
+                "intelligence": 9.8, 
+                "somme": 24.0, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G3J13", 
+            "stats": {
+                "force": 3.2, 
+                "intelligence": 1.7, 
+                "somme": 13.6, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G3J10", 
+            "stats": {
+                "force": 5.3, 
+                "intelligence": 9.0, 
+                "somme": 23.8, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G3J11", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 14.6, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G8J3", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 7.0, 
+                "somme": 17.1, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G8J2", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 5.3, 
+                "somme": 12.5, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G8J1", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 8.6, 
+                "somme": 16.0, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G8J0", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 9.2, 
+                "somme": 24.7, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J7", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 12.9, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J6", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.0, 
+                "somme": 20.8, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G8J5", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 9.2, 
+                "somme": 23.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G8J4", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G8J9", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G8J8", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 7.0, 
+                "somme": 15.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G5J18", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 3.4, 
+                "somme": 11.7, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G5J19", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 11.9, 
+                "vitesse": 5.8
+            }
+        }, 
+        {
+            "name": "G14J11", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 0.1, 
+                "somme": 8.3, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G14J10", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 19.4, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G14J17", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J16", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J15", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 19.0, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G14J14", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 0.1, 
+                "somme": 7.3, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G5J10", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 1.8, 
+                "somme": 13.9, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G5J11", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 8.6, 
+                "somme": 25.2, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G5J12", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 0.3, 
+                "somme": 12.2, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G5J13", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.6, 
+                "somme": 22.0, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G5J14", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 3.4, 
+                "somme": 10.7, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G5J15", 
+            "stats": {
+                "force": 4.6, 
+                "intelligence": 7.0, 
+                "somme": 14.6, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J16", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 9.2, 
+                "somme": 16.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G5J17", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 4.4, 
+                "somme": 19.9, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G15J2", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 17.5, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G7J27", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J28", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G15J3", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G12J20", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G12J21", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 19.4, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G12J22", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 16.6, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J23", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 1.8, 
+                "somme": 12.1, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J24", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 19.5, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J25", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 4.4, 
+                "somme": 14.3, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J26", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 1.9, 
+                "somme": 12.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J27", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 18.8, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G12J28", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 4.4, 
+                "somme": 11.6, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G12J29", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 16.6, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G15J8", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 22.0, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G15J9", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 16.7, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G18J26", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G18J27", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 22.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J24", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J25", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.2, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G18J22", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J23", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 18.8, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J20", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 22.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J21", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G20J29", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G20J28", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G18J28", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G18J29", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.4, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G17J4", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G15J6", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.6, 
+                "somme": 19.5, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G17J6", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 19.5, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J7", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G17J0", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 20.9, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G17J1", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 7.5, 
+                "somme": 20.9, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G17J2", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.2, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G15J7", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 6.7, 
+                "somme": 17.6, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G15J1", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G17J8", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 8.6, 
+                "somme": 21.1, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G15J4", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 18.4, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G19J12", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 15.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G15J5", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 18.7, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G9J29", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G9J28", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 8.6, 
+                "somme": 22.1, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G9J25", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J24", 
+            "stats": {
+                "force": 9.7, 
+                "intelligence": 7.0, 
+                "somme": 23.8, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G9J27", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 9.2, 
+                "somme": 24.7, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J26", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 2.6, 
+                "somme": 11.2, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G9J21", 
+            "stats": {
+                "force": 7.4, 
+                "intelligence": 4.4, 
+                "somme": 20.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J20", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 18.8, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G9J23", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 8.6, 
+                "somme": 24.1, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G9J22", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 8.6, 
+                "somme": 21.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G5J8", 
+            "stats": {
+                "force": 9.0, 
+                "intelligence": 7.0, 
+                "somme": 19.0, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J9", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 1.8, 
+                "somme": 15.2, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G15J0", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G5J2", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 9.4, 
+                "somme": 12.7, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G5J3", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 3.4, 
+                "somme": 17.6, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G5J0", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 7.0, 
+                "somme": 14.7, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J1", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 6.3, 
+                "somme": 17.6, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G5J6", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 3.4, 
+                "somme": 12.0, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J7", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 7.0, 
+                "somme": 18.4, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J4", 
+            "stats": {
+                "force": 9.0, 
+                "intelligence": 9.4, 
+                "somme": 21.4, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J5", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 1.8, 
+                "somme": 12.9, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G2J28", 
+            "stats": {
+                "force": 3.2, 
+                "intelligence": 8.6, 
+                "somme": 14.1, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G2J29", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 3.0, 
+                "somme": 9.1, 
+                "vitesse": 4.4
+            }
+        }, 
+        {
+            "name": "G2J20", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 4.4, 
+                "somme": 15.4, 
+                "vitesse": 5.8
+            }
+        }, 
+        {
+            "name": "G2J21", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 9.0, 
+                "somme": 12.9, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G2J22", 
+            "stats": {
+                "force": 8.2, 
+                "intelligence": 9.8, 
+                "somme": 22.8, 
+                "vitesse": 4.8
+            }
+        }, 
+        {
+            "name": "G2J23", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 4.9, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G2J24", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 8.7, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G2J25", 
+            "stats": {
+                "force": 8.2, 
+                "intelligence": 9.8, 
+                "somme": 22.7, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G2J26", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 9.0, 
+                "somme": 18.3, 
+                "vitesse": 4.6
+            }
+        }, 
+        {
+            "name": "G2J27", 
+            "stats": {
+                "force": 6.1, 
+                "intelligence": 1.6, 
+                "somme": 14.3, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G17J16", 
+            "stats": {
+                "force": 5.9, 
+                "intelligence": 7.5, 
+                "somme": 20.0, 
+                "vitesse": 6.6
+            }
+        }, 
+        {
+            "name": "G9J1", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 0.2, 
+                "somme": 8.6, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G2J9", 
+            "stats": {
+                "force": 4.5, 
+                "intelligence": 5.4, 
+                "somme": 13.1, 
+                "vitesse": 3.2
+            }
+        }, 
+        {
+            "name": "G2J8", 
+            "stats": {
+                "force": 9.5, 
+                "intelligence": 9.4, 
+                "somme": 23.6, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G20J20", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 0.8, 
+                "somme": 17.6, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G2J1", 
+            "stats": {
+                "force": 2.0, 
+                "intelligence": 7.2, 
+                "somme": 18.2, 
+                "vitesse": 9.0
+            }
+        }, 
+        {
+            "name": "G2J0", 
+            "stats": {
+                "force": 3.6, 
+                "intelligence": 9.0, 
+                "somme": 15.2, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G2J3", 
+            "stats": {
+                "force": 6.6, 
+                "intelligence": 1.7, 
+                "somme": 17.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G2J2", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 2.7, 
+                "somme": 8.0, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G2J5", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 6.3, 
+                "somme": 16.0, 
+                "vitesse": 5.8
+            }
+        }, 
+        {
+            "name": "G2J4", 
+            "stats": {
+                "force": 7.8, 
+                "intelligence": 0.6, 
+                "somme": 16.3, 
+                "vitesse": 7.9
+            }
+        }, 
+        {
+            "name": "G2J7", 
+            "stats": {
+                "force": 6.4, 
+                "intelligence": 6.8, 
+                "somme": 23.0, 
+                "vitesse": 9.8
+            }
+        }, 
+        {
+            "name": "G2J6", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 3.4, 
+                "somme": 13.6, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G20J22", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G3J8", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 5.3, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G3J9", 
+            "stats": {
+                "force": 3.1, 
+                "intelligence": 0.2, 
+                "somme": 7.5, 
+                "vitesse": 4.2
+            }
+        }, 
+        {
+            "name": "G3J4", 
+            "stats": {
+                "force": 8.2, 
+                "intelligence": 9.8, 
+                "somme": 27.8, 
+                "vitesse": 9.8
+            }
+        }, 
+        {
+            "name": "G3J5", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 8.6, 
+                "somme": 20.9, 
+                "vitesse": 9.3
+            }
+        }, 
+        {
+            "name": "G3J6", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 6.3, 
+                "somme": 17.7, 
+                "vitesse": 5.8
+            }
+        }, 
+        {
+            "name": "G3J7", 
+            "stats": {
+                "force": 6.6, 
+                "intelligence": 4.4, 
+                "somme": 19.7, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G3J0", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 8.7, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G3J1", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 7.7, 
+                "somme": 18.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G3J2", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 6.3, 
+                "somme": 17.3, 
+                "vitesse": 5.8
+            }
+        }, 
+        {
+            "name": "G3J3", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 0.3, 
+                "somme": 10.2, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G13J18", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J19", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 4.4, 
+                "somme": 11.6, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G20J27", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G13J12", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 1.8, 
+                "somme": 10.4, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G13J13", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.6, 
+                "somme": 14.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J10", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 16.3, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G13J11", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 15.8, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J16", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 0.1, 
+                "somme": 11.0, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G13J17", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 19.5, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G13J14", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.6, 
+                "somme": 14.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G13J15", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 8.6, 
+                "somme": 14.5, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G1J18", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 5.5, 
+                "somme": 10.8, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G20J21", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G1J19", 
+            "stats": {
+                "force": 7.1, 
+                "intelligence": 9.8, 
+                "somme": 24.0, 
+                "vitesse": 7.1
+            }
+        }, 
+        {
+            "name": "G11J14", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.9, 
+                "somme": 21.5, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J15", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 7.0, 
+                "somme": 20.1, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G11J16", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 0.2, 
+                "somme": 10.3, 
+                "vitesse": 5.0
+            }
+        }, 
+        {
+            "name": "G11J17", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 8.6, 
+                "somme": 22.4, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G11J10", 
+            "stats": {
+                "force": 4.1, 
+                "intelligence": 4.4, 
+                "somme": 13.0, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J11", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 0.2, 
+                "somme": 13.3, 
+                "vitesse": 8.0
+            }
+        }, 
+        {
+            "name": "G11J12", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.5, 
+                "vitesse": 9.2
+            }
+        }, 
+        {
+            "name": "G11J13", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.2, 
+                "somme": 19.5, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J18", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 18.8, 
+                "vitesse": 4.5
+            }
+        }, 
+        {
+            "name": "G11J19", 
+            "stats": {
+                "force": 5.1, 
+                "intelligence": 9.2, 
+                "somme": 23.0, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G5J21", 
+            "stats": {
+                "force": 9.0, 
+                "intelligence": 1.8, 
+                "somme": 13.8, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J20", 
+            "stats": {
+                "force": 2.4, 
+                "intelligence": 7.0, 
+                "somme": 12.4, 
+                "vitesse": 3.0
+            }
+        }, 
+        {
+            "name": "G5J23", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 1.9, 
+                "somme": 17.0, 
+                "vitesse": 9.5
+            }
+        }, 
+        {
+            "name": "G5J22", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 15.8, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G5J25", 
+            "stats": {
+                "force": 6.8, 
+                "intelligence": 0.3, 
+                "somme": 15.8, 
+                "vitesse": 8.7
+            }
+        }, 
+        {
+            "name": "G5J24", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 0.3, 
+                "somme": 10.6, 
+                "vitesse": 4.7
+            }
+        }, 
+        {
+            "name": "G5J27", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 1.8, 
+                "somme": 11.4, 
+                "vitesse": 1.2
+            }
+        }, 
+        {
+            "name": "G1J15", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 7.2, 
+                "vitesse": 3.5
+            }
+        }, 
+        {
+            "name": "G5J29", 
+            "stats": {
+                "force": 5.6, 
+                "intelligence": 4.4, 
+                "somme": 11.6, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G5J28", 
+            "stats": {
+                "force": 9.5, 
+                "intelligence": 4.4, 
+                "somme": 15.5, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G14J28", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 4.1, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J29", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 4.1, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J22", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 19.4, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G14J23", 
+            "stats": {
+                "force": 8.1, 
+                "intelligence": 8.5, 
+                "somme": 22.0, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G14J20", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.6, 
+                "somme": 16.8, 
+                "vitesse": 2.8
+            }
+        }, 
+        {
+            "name": "G14J21", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.5, 
+                "somme": 15.7, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J26", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 6.7, 
+                "somme": 17.5, 
+                "vitesse": 5.4
+            }
+        }, 
+        {
+            "name": "G14J27", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 8.6, 
+                "somme": 16.3, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G14J24", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 0.1, 
+                "somme": 4.1, 
+                "vitesse": 1.8
+            }
+        }, 
+        {
+            "name": "G14J25", 
+            "stats": {
+                "force": 2.2, 
+                "intelligence": 8.6, 
+                "somme": 16.3, 
+                "vitesse": 5.5
+            }
+        }, 
+        {
+            "name": "G20J23", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 9.5, 
+                "somme": 26.3, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J21", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G19J20", 
+            "stats": {
+                "force": 5.4, 
+                "intelligence": 8.0, 
+                "somme": 19.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G20J25", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 22.5, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G19J23", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 7.5, 
+                "somme": 19.4, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G17J5", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 7.5, 
+                "somme": 22.1, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G20J24", 
+            "stats": {
+                "force": 8.4, 
+                "intelligence": 8.0, 
+                "somme": 24.8, 
+                "vitesse": 8.4
+            }
+        }, 
+        {
+            "name": "G19J22", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 9.5, 
+                "somme": 21.2, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G1J47", 
+            "stats": {
+                "force": 1.3, 
+                "intelligence": 9.0, 
+                "somme": 12.9, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G1J46", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 6.3, 
+                "somme": 19.1, 
+                "vitesse": 8.9
+            }
+        }, 
+        {
+            "name": "G1J45", 
+            "stats": {
+                "force": 2.0, 
+                "intelligence": 7.2, 
+                "somme": 18.2, 
+                "vitesse": 9.0
+            }
+        }, 
+        {
+            "name": "G1J44", 
+            "stats": {
+                "force": 5.2, 
+                "intelligence": 4.8, 
+                "somme": 15.2, 
+                "vitesse": 5.2
+            }
+        }, 
+        {
+            "name": "G1J43", 
+            "stats": {
+                "force": 7.5, 
+                "intelligence": 4.5, 
+                "somme": 21.6, 
+                "vitesse": 9.6
+            }
+        }, 
+        {
+            "name": "G1J42", 
+            "stats": {
+                "force": 1.2, 
+                "intelligence": 2.1, 
+                "somme": 8.4, 
+                "vitesse": 5.1
+            }
+        }, 
+        {
+            "name": "G1J41", 
+            "stats": {
+                "force": 2.0, 
+                "intelligence": 8.1, 
+                "somme": 14.9, 
+                "vitesse": 4.8
+            }
+        }, 
+        {
+            "name": "G1J40", 
+            "stats": {
+                "force": 3.7, 
+                "intelligence": 2.4, 
+                "somme": 9.6, 
+                "vitesse": 3.5
+            }
+        }, 
+        {
+            "name": "G17J3", 
+            "stats": {
+                "force": 8.7, 
+                "intelligence": 1.7, 
+                "somme": 16.3, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G1J49", 
+            "stats": {
+                "force": 3.2, 
+                "intelligence": 8.6, 
+                "somme": 18.0, 
+                "vitesse": 6.2
+            }
+        }, 
+        {
+            "name": "G1J48", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 7.7, 
+                "vitesse": 1.6
+            }
+        }, 
+        {
+            "name": "G19J25", 
+            "stats": {
+                "force": 5.8, 
+                "intelligence": 3.3, 
+                "somme": 15.0, 
+                "vitesse": 5.9
+            }
+        }, 
+        {
+            "name": "G3J29", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 6.3, 
+                "somme": 16.5, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G3J28", 
+            "stats": {
+                "force": 6.4, 
+                "intelligence": 3.4, 
+                "somme": 12.4, 
+                "vitesse": 2.6
+            }
+        }, 
+        {
+            "name": "G3J23", 
+            "stats": {
+                "force": 1.7, 
+                "intelligence": 4.4, 
+                "somme": 11.9, 
+                "vitesse": 5.8
+            }
+        }, 
+        {
+            "name": "G3J22", 
+            "stats": {
+                "force": 3.2, 
+                "intelligence": 8.6, 
+                "somme": 14.1, 
+                "vitesse": 2.3
+            }
+        }, 
+        {
+            "name": "G3J21", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 8.6, 
+                "somme": 16.3, 
+                "vitesse": 3.8
+            }
+        }, 
+        {
+            "name": "G3J20", 
+            "stats": {
+                "force": 6.4, 
+                "intelligence": 3.4, 
+                "somme": 16.1, 
+                "vitesse": 6.3
+            }
+        }, 
+        {
+            "name": "G3J27", 
+            "stats": {
+                "force": 4.7, 
+                "intelligence": 8.5, 
+                "somme": 19.3, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G3J26", 
+            "stats": {
+                "force": 3.2, 
+                "intelligence": 8.6, 
+                "somme": 17.9, 
+                "vitesse": 6.1
+            }
+        }, 
+        {
+            "name": "G3J25", 
+            "stats": {
+                "force": 3.0, 
+                "intelligence": 0.7, 
+                "somme": 13.0, 
+                "vitesse": 9.3
+            }
+        }, 
+        {
+            "name": "G3J24", 
+            "stats": {
+                "force": 3.9, 
+                "intelligence": 3.4, 
+                "somme": 12.0, 
+                "vitesse": 4.7
+            }
+        }
+    ]
+}
