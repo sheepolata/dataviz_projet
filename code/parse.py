@@ -58,7 +58,36 @@ def get_gen_from_name(name):
 	res = "".join(resl)
 	return int(res)
 
+"""Cree un fichier json contenant chaque agent et ses parents"""
+def genealogie_simple(nom_fichier):
+	fichier = open("../data/60ind_20gen.json", 'r')
+
+	data = json.load(fichier)
+
+	generations = data["generations"]
+
+	dico_parent = {}
+
+	for gen in generations:
+		matchs = gen["matchs"]
+		for match in matchs:
+			p1 = match["player_1"]
+			p2 = match["player_2"]
+
+			dico_parent[p1["name"]] = {"parent_1" : p1["parent_1"], "parent_2" : p1["parent_2"]}
+			dico_parent[p2["name"]] = {"parent_1" : p2["parent_1"], "parent_2" : p2["parent_2"]}
+
+	json_tmp = []
+	for k in dico_parent:
+		json_tmp.append({"name" : k, "parent_1" : dico_parent[k]["parent_1"], "parent_2" : dico_parent[k]["parent_2"]})
+
+	json_data = {"players" : json_tmp}
+
+	fichier_res = open("../data/data_ancetres.json", 'w')
+
+	fichier_res.write(json.dumps(json_data, indent=4, sort_keys=True))
 
 
 if __name__ == '__main__':
 	name_and_stats("test")
+	genealogie_simple("test")
