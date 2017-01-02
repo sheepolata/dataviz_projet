@@ -86,8 +86,40 @@ def genealogie_simple(nom_fichier):
 	fichier_res = open("../data/data_ancetres.json", 'w')
 
 	fichier_res.write(json.dumps(json_data, indent=4, sort_keys=True))
+	
+def stat_gen(nom_fichier):
+	fichier = open("../data/60ind_20gen.json", 'r')
 
+	data = json.load(fichier)
 
+	generations = data["generations"]
+
+	dico_stats_gen = {"Generations" : []}
+	dico_stats_gen["Mutation_Fixe"] = data["fixed_mutation_rate"]
+	for gen in generations:
+		force = 0
+		intel = 0
+		vites = 0
+		matchs = gen["matchs"]
+		for match in matchs:
+			p1 = match["player_1"]
+			p2 = match["player_2"]
+
+			force += p1["Force"] + p2["Force"]
+			intel += p1["Intelligence"] + p2["Intelligence"]
+			vites += p1["Vitesse"] + p2["Vitesse"]
+		force = round(force / (len(matchs)*2), 2)
+		intel = round(intel / (len(matchs)*2), 2)
+		vites = round(vites / (len(matchs)*2), 2)
+		dico_stats_gen["Generations"].append({"Numero_Gen" : gen["gen_number"], "Force" : force, "Vitesse" : vites, "Intelligence" : intel, "Mutation" : gen["gen_real_mutation_rate"]})
+	
+
+	fichier_res = open("../data/data_stats_gen.json", 'w')
+
+	fichier_res.write(json.dumps(dico_stats_gen, indent=4, sort_keys=True))
+		
+	
 if __name__ == '__main__':
 	name_and_stats("test")
 	genealogie_simple("test")
+	stat_gen("test")
