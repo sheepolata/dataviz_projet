@@ -119,7 +119,8 @@ import json
 	# fichier_res.write(json.dumps(dico_stats_gen, indent=4, sort_keys=True))
 
 def result_match(nom_fichier):
-	fichier = open("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", 'r')
+	# fichier = open("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", 'r')
+	fichier = open("../data/60ind_20gen.json", 'r')
 
 	data = json.load(fichier)
 	
@@ -127,8 +128,11 @@ def result_match(nom_fichier):
 	matchs = []
 	dico_match = {"Generations" : []}
 	for gen in generations:
-		dico_match["Generations"].append({"Generation" : gen["gen_number"], "Matchs" : []})
+		dico_match["Generations"].append({"Generation" : gen["gen_number"]})
+		new_matchs = []
 		for match in gen["matchs"]:
+			new_match   = {}
+
 			id_match	= match["match_nb"]
 			p1 			= match["player_1"]
 			p1_color 	= p1["team"]
@@ -141,11 +145,25 @@ def result_match(nom_fichier):
 			p2_points 	= p2["points"]   
 			p2_name 	= p2["name"]
 			p2_strat	= p2["favorite_strategy"]
-			for gen in dico_match["Generations"]:
-				gen["Matchs"].append({"Numero_match" : id_match, "Joueur 1" : {"Nom" : p1_name, "Equipe" : p1_color, "Points" : p1_points, "Strategies" : p1_strat}, "Joueur 2" : {"Nom" : p2_name, "Equipe" : p2_color, "Points" : p2_points, "Strategies" : p2_strat}})
-		
 
-	fichier_res = open("C:/Users/Janjak/Desktop/testDV/Projet/data_stats_matchs.json", 'w')
+			new_match["id_match"] = id_match
+			new_match["p1_color"] = p1_color
+			new_match["p1_points"] = p1_points
+			new_match["p1_name"] = p1_name
+			new_match["p1_strat"] = p1_strat
+			new_match["p2_color"] = p2_color
+			new_match["p2_points"] = p2_points
+			new_match["p2_color"] = p2_color
+			new_match["p2_name"] = p2_name
+			new_match["p2_strat"] = p2_strat
+			
+			new_matchs.append(new_match)
+
+		dico_match["Generations"][-1]["Matchs"] = new_matchs
+
+
+	# fichier_res = open("C:/Users/Janjak/Desktop/testDV/Projet/data_stats_matchs.json", 'w')
+	fichier_res = open("../data/data_stats_matchs.json", 'w')
 
 	fichier_res.write(json.dumps(dico_match, indent=4, sort_keys=True))	
 	
