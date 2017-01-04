@@ -3,89 +3,93 @@
   <meta charset="utf-8">
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <style>
-    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;overflow-y:scroll; }
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;}
     .line {
       fill: none;
       stroke: black;
       stroke-width: 1.5px;
     }
+
   </style>
 </head>
 
 <body>
-  <script>
-    var svg = d3.select("body").append("svg")
-      .attr("width", "100%")
-      .attr("height", "100%")
+	  <script>
+		var svg = d3.select("body")
+			.append("div")
+				.style("height", "100%")
+				.style("width", "100%")
+				.style("overflow", "scroll")
+			.append("svg")
+				.attr("width", "1920px")
+				.attr("height", "1080px")
 
-    var width = 960;
-    var height = 50;	  
-	  
- 
-    
-	var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], .5);
-
-    var y = d3.scale.linear()
-        .range([height, height - 200]);
-	
-    var g = svg.append("g")
-    	.attr("transform", "translate(10, 0)")
-	
-	var lineGraph = svg.append("path")
-                            
-	var scale = [10,9,8,7,6,5,4,3,2,1,0]
-	
-	var lineDataForce = [];
-	var lineDataVites = [];
-	var lineDataIntel = [];
-	
-   	d3.json("data/data_stats_gen.json", function(data) {
+		var width = 960;
+		var height = 500;	  
+		  
+	 
 		
-		for (var d = 0; d < data["Generations"].length; d++){    
-			lineDataForce.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Force"]});
-			lineDataVites.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Vitesse"]});
-			lineDataIntel.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Intelligence"]});
-			
-		}
-		x.domain([0, 20]);
-		y.domain([0, 11]);
+		var x = d3.scale.ordinal()
+			.rangeRoundBands([0, width], .5);
+
+		var y = d3.scale.linear()
+			.range([height, height - 200]);
 		
-		svg.selectAll("text").data(lineDataForce).enter()
-			.append("text")
-			.text(function(d,i) { return scale[i];})
-			.attr("x", 10 )
-			.attr("y", function(d,i) { return 237+i*37; })
-			.style("font-family", "monospace");
+		var g = svg.append("g")
+			.attr("transform", "translate(10, 0)")
+		
+		var lineGraph = svg.append("path")
+								
+		var scale = [10,9,8,7,6,5,4,3,2,1,0]
+		
+		var lineDataForce = [];
+		var lineDataVites = [];
+		var lineDataIntel = [];
+		
+		d3.json("data/data_stats_gen.json", function(data) {
 			
-		g.selectAll(".value").data(lineDataForce).enter()
-			.append("text")
-			.text(function(d, i) { return i+1; })
-			.attr("class", "value")
-			.attr("x", function(d,i) { return 30+i*50; })
-			.attr("y", 650)
-			.style("font-family", "monospace");	
+			for (var d = 0; d < data["Generations"].length; d++){    
+				lineDataForce.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Force"]});
+				lineDataVites.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Vitesse"]});
+				lineDataIntel.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Intelligence"]});
+				
+			}
 			
-		g.selectAll("circle").data(lineDataForce).enter().append("circle")
-			.attr("cx", function(d) {return d.x*50-10;})
-			.attr("cy", function(d) {return 237+(10-d.y)*37;})
-			.attr("r", function(d) {return 3;})
-			.style("fill", "blue")
-			
-	    g.selectAll("circle2").data(lineDataVites).enter().append("circle")
-			.attr("cx", function(d) {return d.x*50-10;})
-			.attr("cy", function(d) {return 237+(10-d.y)*37;})
-			.attr("r", function(d) {return 3;})
-			.style("fill", "green")
-			
-		g.selectAll("circle3").data(lineDataIntel).enter().append("circle")
-			.attr("cx", function(d) {return d.x*50-10;})
-			.attr("cy", function(d) {return 237+(10-d.y)*37;})
-			.attr("r", function(d) {return 3;})
-			.style("fill", "red")
-			
+			svg.selectAll("text").data(lineDataForce).enter()
+				.append("text")
+				.text(function(d,i) { return scale[i];})
+				.attr("x", 10 )
+				.attr("y", function(d,i) { return 237+i*37; })
+				.style("font-family", "monospace");
+				
+			g.selectAll(".value").data(lineDataForce).enter()
+				.append("text")
+				.text(function(d, i) { return i+1; })
+				.attr("class", "value")
+				.attr("x", function(d,i) { return 30+i*50; })
+				.attr("y", 650)
+				.style("font-family", "monospace");	
+				
+			g.selectAll("circle").data(lineDataForce).enter().append("circle")
+				.attr("cx", function(d) {return d.x*50-10;})
+				.attr("cy", function(d) {return 237+(10-d.y)*37;})
+				.attr("r", function(d) {return 3;})
+				.style("fill", "blue")
+				
+			g.selectAll("circle2").data(lineDataVites).enter().append("circle")
+				.attr("cx", function(d) {return d.x*50-10;})
+				.attr("cy", function(d) {return 237+(10-d.y)*37;})
+				.attr("r", function(d) {return 3;})
+				.style("fill", "green")
+				
+			g.selectAll("circle3").data(lineDataIntel).enter().append("circle")
+				.attr("cx", function(d) {return d.x*50-10;})
+				.attr("cy", function(d) {return 237+(10-d.y)*37;})
+				.attr("r", function(d) {return 3;})
+				.style("fill", "red")
+				
 
 
-	 });
-  </script>
+		 });
+		</script>
 </body>
