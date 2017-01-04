@@ -3,9 +3,9 @@
 import json
 
 """Cree un fichier json contenant le nom de chaque agent, ses stats, la somme de celle ci, sa premiere generation et sa derniere generation"""
-def name_and_stats(nom_fichier):
-	Beta
-	fichier = open("../data/60ind_20gen.json", 'r')
+def name_and_stats(in_file, out_file="data/data_noms_stats.json"):
+	#Beta
+	fichier = open(in_file, 'r')
 
 	data = json.load(fichier)
 
@@ -41,7 +41,7 @@ def name_and_stats(nom_fichier):
 	json_data = {"players" : json_tmp}
 
 
-	fichier_res = open("../data/data_noms_stats.json", 'w')
+	fichier_res = open(out_file, 'w')
 
 	fichier_res.write(json.dumps(json_data, indent=4, sort_keys=True))
 
@@ -59,8 +59,8 @@ def get_gen_from_name(name):
 	return int(res)
 
 """Cree un fichier json contenant chaque agent et ses parents"""
-def genealogie_simple(nom_fichier):
-	fichier = open("../data/60ind_20gen.json", 'r')
+def genealogie_simple(in_file, out_file="data/data_ancetres.json"):
+	fichier = open(in_file, 'r')
 
 	data = json.load(fichier)
 
@@ -83,12 +83,12 @@ def genealogie_simple(nom_fichier):
 
 	json_data = {"players" : json_tmp}
 
-	fichier_res = open("../data/data_ancetres.json", 'w')
+	fichier_res = open(out_file, 'w')
 
 	fichier_res.write(json.dumps(json_data, indent=4, sort_keys=True))
 	
-def stat_gen(nom_fichier):
-	fichier = open("../data/60ind_20gen.json", 'r')
+def stat_gen(in_file, out_file="data/data_stats_gen.json"):
+	fichier = open(in_file, 'r')
 
 	data = json.load(fichier)
 
@@ -114,13 +114,13 @@ def stat_gen(nom_fichier):
 		dico_stats_gen["Generations"].append({"Numero_Gen" : gen["gen_number"], "Force" : force, "Vitesse" : vites, "Intelligence" : intel, "Mutation" : gen["gen_real_mutation_rate"]})
 	
 
-	fichier_res = open("../data/data_stats_gen.json", 'w')
+	fichier_res = open(out_file, 'w')
 
 	fichier_res.write(json.dumps(dico_stats_gen, indent=4, sort_keys=True))
 
-def result_match(nom_fichier):
+def result_match(in_file, out_file="data/data_stats_matchs.json"):
 	# fichier = open("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", 'r')
-	fichier = open("../data/60ind_20gen.json", 'r')
+	fichier = open(in_file, 'r')
 
 	data = json.load(fichier)
 	
@@ -161,15 +161,18 @@ def result_match(nom_fichier):
 
 		dico_match["Generations"][-1]["Matchs"] = new_matchs
 
-
-	# fichier_res = open("C:/Users/Janjak/Desktop/testDV/Projet/data_stats_matchs.json", 'w')
-	fichier_res = open("../data/data_stats_matchs.json", 'w')
+	fichier_res = open(out_file, 'w')
 
 	fichier_res.write(json.dumps(dico_match, indent=4, sort_keys=True))	
 	
 	
 if __name__ == '__main__':
-	# name_and_stats("test")
-	# genealogie_simple("test")
-	# stat_gen("test")
-	result_match("test")
+	name_and_stats("data/60ind_20gen.json")
+	genealogie_simple("data/60ind_20gen.json")
+	stat_gen("data/60ind_20gen.json")
+	result_match("data/60ind_20gen.json")
+
+	# name_and_stats("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)
+	# genealogie_simple("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)
+	# stat_gen("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)
+	# result_match("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", "C:/Users/Janjak/Desktop/testDV/Projet/data_stats_matchs.json")

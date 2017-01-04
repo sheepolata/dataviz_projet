@@ -1,0 +1,145 @@
+{
+    "Generations": [
+        {
+            "Force": 4.83, 
+            "Intelligence": 4.65, 
+            "Mutation": 0.025, 
+            "Numero_Gen": 1, 
+            "Vitesse": 5.66
+        }, 
+        {
+            "Force": 5.0, 
+            "Intelligence": 4.88, 
+            "Mutation": 0.019444444444444445, 
+            "Numero_Gen": 2, 
+            "Vitesse": 5.29
+        }, 
+        {
+            "Force": 5.01, 
+            "Intelligence": 5.56, 
+            "Mutation": 0.030555555555555555, 
+            "Numero_Gen": 3, 
+            "Vitesse": 6.13
+        }, 
+        {
+            "Force": 5.57, 
+            "Intelligence": 4.23, 
+            "Mutation": 0.03333333333333333, 
+            "Numero_Gen": 4, 
+            "Vitesse": 4.31
+        }, 
+        {
+            "Force": 6.59, 
+            "Intelligence": 4.95, 
+            "Mutation": 0.016666666666666666, 
+            "Numero_Gen": 5, 
+            "Vitesse": 5.11
+        }, 
+        {
+            "Force": 5.96, 
+            "Intelligence": 5.52, 
+            "Mutation": 0.022222222222222223, 
+            "Numero_Gen": 6, 
+            "Vitesse": 5.34
+        }, 
+        {
+            "Force": 6.69, 
+            "Intelligence": 3.26, 
+            "Mutation": 0.022222222222222223, 
+            "Numero_Gen": 7, 
+            "Vitesse": 5.95
+        }, 
+        {
+            "Force": 5.09, 
+            "Intelligence": 4.54, 
+            "Mutation": 0.03333333333333333, 
+            "Numero_Gen": 8, 
+            "Vitesse": 6.11
+        }, 
+        {
+            "Force": 6.67, 
+            "Intelligence": 6.14, 
+            "Mutation": 0.027777777777777776, 
+            "Numero_Gen": 9, 
+            "Vitesse": 7.42
+        }, 
+        {
+            "Force": 4.31, 
+            "Intelligence": 5.3, 
+            "Mutation": 0.022222222222222223, 
+            "Numero_Gen": 10, 
+            "Vitesse": 6.26
+        }, 
+        {
+            "Force": 5.11, 
+            "Intelligence": 6.16, 
+            "Mutation": 0.022222222222222223, 
+            "Numero_Gen": 11, 
+            "Vitesse": 8.72
+        }, 
+        {
+            "Force": 5.39, 
+            "Intelligence": 6.67, 
+            "Mutation": 0.030555555555555555, 
+            "Numero_Gen": 12, 
+            "Vitesse": 6.21
+        }, 
+        {
+            "Force": 4.62, 
+            "Intelligence": 6.3, 
+            "Mutation": 0.030555555555555555, 
+            "Numero_Gen": 13, 
+            "Vitesse": 3.61
+        }, 
+        {
+            "Force": 3.85, 
+            "Intelligence": 6.53, 
+            "Mutation": 0.016666666666666666, 
+            "Numero_Gen": 14, 
+            "Vitesse": 4.33
+        }, 
+        {
+            "Force": 6.75, 
+            "Intelligence": 7.87, 
+            "Mutation": 0.016666666666666666, 
+            "Numero_Gen": 15, 
+            "Vitesse": 4.87
+        }, 
+        {
+            "Force": 7.06, 
+            "Intelligence": 7.76, 
+            "Mutation": 0.030555555555555555, 
+            "Numero_Gen": 16, 
+            "Vitesse": 3.15
+        }, 
+        {
+            "Force": 5.76, 
+            "Intelligence": 7.41, 
+            "Mutation": 0.03888888888888889, 
+            "Numero_Gen": 17, 
+            "Vitesse": 6.97
+        }, 
+        {
+            "Force": 7.82, 
+            "Intelligence": 6.03, 
+            "Mutation": 0.022222222222222223, 
+            "Numero_Gen": 18, 
+            "Vitesse": 6.33
+        }, 
+        {
+            "Force": 5.77, 
+            "Intelligence": 6.6, 
+            "Mutation": 0.025, 
+            "Numero_Gen": 19, 
+            "Vitesse": 5.98
+        }, 
+        {
+            "Force": 8.2, 
+            "Intelligence": 6.58, 
+            "Mutation": 0.027777777777777776, 
+            "Numero_Gen": 20, 
+            "Vitesse": 7.44
+        }
+    ], 
+    "Mutation_Fixe": 0.05
+}

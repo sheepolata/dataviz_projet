@@ -40,7 +40,7 @@
 	var lineDataVites = [];
 	var lineDataIntel = [];
 	
-   	d3.json("data_stats_gen.json", function(data) {
+   	d3.json("data/data_stats_gen.json", function(data) {
 		
 		for (var d = 0; d < data["Generations"].length; d++){    
 			lineDataForce.push({"x" : data["Generations"][d]["Numero_Gen"], "y": data["Generations"][d]["Force"]});
