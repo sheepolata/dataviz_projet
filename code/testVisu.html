@@ -55,9 +55,9 @@
 				
 			}
 			
-			svg.selectAll("text").data(lineDataForce).enter()
+			svg.selectAll("text").data(scale).enter()
 				.append("text")
-				.text(function(d,i) { return scale[i];})
+				.text(function(d,i) { return d;})
 				.attr("x", 10 )
 				.attr("y", function(d,i) { return 237+i*37; })
 				.style("font-family", "monospace");
