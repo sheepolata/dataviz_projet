@@ -54,14 +54,17 @@
 		<script type="text/javascript">
 
 			var to_color = function(x){
-				if(x == 0) return rgb(0,0,255);
-				else if (x == 1) return rgb(255,0,0);
+				if(x == 0) return "blue";
+				else if (x == 1) return "red";
 			};
+
+			var width  = 3800;
+			var height = 1080;
 
 			var svg = d3.select("body")
 				.append("svg")
-			     	.attr("width", 4000)
-			      	.attr("height", 1080)
+			     	.attr("width", width)
+			      	.attr("height", height)
 
 	      	var g = svg.append("g")
 				.attr("transform", "translate(10, 0)")
@@ -71,8 +74,7 @@
 	    	var all_points         = []
 	    	var all_gen_number     = []
 	    	var all_matchs         = {}
-	    	var stats_p1           = {}
-	    	var stats_p2           = {}
+	    	var all_stats          = {}
 		    d3.json("data/data_stats_matchs.json", function(data) {
 		    	gen = data["Generations"]
 		    	for(var i = 0; i < gen.length; i++){
@@ -81,8 +83,7 @@
 		    		all_gen_number.push(nb);
 		    		matchs = current_gen["Matchs"];
 		    		all_matchs[nb] = []
-		    		stats_p1[nb]   = []
-		    		stats_p2[nb]   = []
+		    		all_stats[nb]  = []
 		    		for(var j = 0; j < matchs.length; j++){
 		    			current_match = matchs[j];
 		    			
@@ -91,13 +92,19 @@
 
 		    			all_matchs[nb].push(tmp_match);
 
-		    			tmp_p1 = {}
-		    			tmp_p1["score"] = current_match["p1_points"]
-		    			stats_p1[nb].push(tmp_p1)
+		    			tmp_stat = {}
+		    			tmp_stat["score"] = current_match["p1_points"]
+		    			tmp_stat["color"] = current_match["p1_color"]
+		    			tmp_stat["i"]     = j
+		    			tmp_stat["id"]    = current_match["p1_name"] + "vs" + current_match["p2_name"];
+		    			all_stats[nb].push(tmp_stat)
 
-		    			tmp_p2 = {}
-		    			tmp_p2["score"] = current_match["p2_points"]
-		    			stats_p2[nb].push(tmp_p2)
+		    			tmp_stat = {}
+		    			tmp_stat["score"] = current_match["p2_points"]
+		    			tmp_stat["color"] = current_match["p2_color"]
+		    			tmp_stat["i"]     = j
+		    			tmp_stat["id"]    = current_match["p1_name"] + "vs" + current_match["p2_name"];
+		    			all_stats[nb].push(tmp_stat)
 
 		    			all_points.push(current_match["p1_points"]);
 		    			all_points.push(current_match["p2_points"]);
@@ -110,10 +117,20 @@
 					current_gen_number = +this.value;
 					d3.select('#gen').text("Generation " + current_gen_number)
 					repaint();
-					// console.log(current_gen_number);
 		        	
 				});
 		   		max_points = Math.max(...all_points);
+
+		   		var h = 40+16*30
+		   		var w = all_matchs[current_gen_number].length * 120 + 40
+
+		   		var xscale = d3.scale.linear()
+					.domain([0, max_points])
+					.range([0, h]);
+
+				var yscale = d3.scale.linear()
+					.domain([0, all_matchs[current_gen_number].length])
+					.range([0, w])
 
 		   		scale = []
 		   		for(var i = max_points; i >= 0; i--){
@@ -139,22 +156,27 @@
 					g.selectAll(".value").data(all_matchs[current_gen_number]).enter()
 						.append("text")
 						.text(function(d) { return d["label"]; })
+						.attr("id", function(d){return d["label"]; })
 						.attr("class", "value")
-						.attr("x", function(d,i) { return 40+i*120; })
+						.attr("x", function(d,i) { return 40 + yscale(i)/*40+i*120*/; })
 						.attr("y", max_points * 30 + 60)
 						.style("font-family", "monospace");
 
-					g.selectAll("circle").data(stats_p1[current_gen_number]).enter().append("circle")
-						.attr("cx", function(d, i) {return 85+i*120;})
+					g.selectAll("circle").data(all_stats[current_gen_number]).enter().append("circle")
+						.attr("cx", function(d) {var x = 85; if(d.color == 0){ x = 80; } else{x = 90;} return x+d.i*120;})
 						.attr("cy", function(d) {return 30 + (max_points-d.score) * 30.4;})
-						.attr("r", function(d) {return 3;})
-						.style("fill", "blue");		  
+						.attr("r", function(d) {return 4;})
+						.attr("id", function(d){return d.id;})
+						.style("fill", function(d){return to_color(d.color);})
+						.on("mouseover", function(d){
+        					d3.selectAll("#" + d.id).transition().duration(200).attr("r", 8);
+        					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "bold");
+    					})
+    					.on("mouseout", function(d){
+        					d3.selectAll("#" + d.id).transition().duration(200).attr("r", 4);
+        					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "");
 
-					g.selectAll("circle2").data(stats_p2[current_gen_number]).enter().append("circle")
-						.attr("cx", function(d, i) {return 85+i*120;})
-						.attr("cy", function(d) {return 30 + (max_points-d.score) * 30.4;})
-						.attr("r", function(d) {return 3;})
-						.style("fill", "red");	 
+    					});
 	   			}
 
 	   			repaint();
