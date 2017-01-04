@@ -3,3 +3,4 @@
 15/12/2016 : Début du formatage des données pour la visualisation
 02/01/2017 : Continuation du parsing des données
 03/01/2017 : Finalisation du parsing des données et début de la visualisation
+04/01/2017 : Visualisation 1 terminée
