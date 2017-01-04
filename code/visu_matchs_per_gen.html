@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Visualization Matchs</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div>
+			<input id="slider" type="range" value="1" min="1" max="100" step="1" />
+			<span id="week">Generation</span>
+		</div>
+		<script type="text/javascript">
+
+			var svg = d3.select("body").append("svg")
+		     	.attr("width", 1920)
+		      	.attr("height", 1080)
+
+
+		    var width = 960;
+		    var height = 50;   
+			var x = d3.scale.ordinal()
+		        .rangeRoundBands([0, width], .5);
+		    var y = d3.scale.linear()
+		        .range([height, height - 200]);
+
+
+	    	var all_points     = []
+	    	var all_gen_number = []
+		    d3.json("data/data_stats_matchs.json", function(data) {
+		    	gen = data["Generations"]
+		    	for(var i = 0; i < gen.length; i++){
+		    		current_gen = gen[i];
+		    		all_gen_number.push(current_gen["Generation"])
+		    		matchs = current_gen["Matchs"];
+		    		for(var j = 0; j < matchs.length; j++){
+		    			current_match = matchs[j];
+		    			all_points.push(current_match["p1_points"]);
+		    			all_points.push(current_match["p2_points"]);
+		    		}
+		    	}
+		   		d3.select(".legend2").text(Math.max(...all_gen_number));
+		   		console.log(Math.max(...all_points))
+		   	
+		   	});
+
+
+
+		</script>
+	</body>
+</html>
