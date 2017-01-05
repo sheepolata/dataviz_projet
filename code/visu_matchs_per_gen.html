@@ -155,7 +155,7 @@
 
 					g.selectAll(".value").data(all_matchs[current_gen_number]).enter()
 						.append("text")
-						.text(function(d) { return d["label"]; })
+						.html(function(d) {return d["label"]; })
 						.attr("id", function(d){return d["label"]; })
 						.attr("class", "value")
 						.attr("x", function(d,i) { return 40 + yscale(i)/*40+i*120*/; })
