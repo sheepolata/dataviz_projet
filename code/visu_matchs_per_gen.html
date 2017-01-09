@@ -88,10 +88,6 @@
 				.x(function(d) { return d.cx.animVal.value; })
 				.y(function(d) { return d.cy.animVal.value; })
 
-			var data_fixe = []
-				data_fixe.push({"x" : 100, "y" : 107})
-				data_fixe.push({"x" : 1000, "y" : 107})
-
 		    var current_gen_number = 1
 		    var max_points         = 0
 	    	var all_points         = []
@@ -281,11 +277,11 @@
     						return coord(d);
 						})
     					.style("stroke-dasharray", ("8, 5"));
-	   				g.selectAll("path_y").data([data_fixe]).enter().append("path")
+	   				g.selectAll("path_y").data([{}, {}]).enter().append("path")
 						.attr("class", "line")
 						.attr("stroke", "black")
 						.attr("d", line_fixe_y);
-					g.selectAll("path_x").data([data_fixe]).enter().append("path")
+					g.selectAll("path_x").data([{}, {}]).enter().append("path")
 						.attr("class", "line")
 						.attr("stroke", "black")
 						.attr("d", line_fixe_x);
