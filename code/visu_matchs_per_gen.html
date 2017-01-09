@@ -39,6 +39,14 @@
 				font-size: 60%;
 				position: absolute;
 			}
+			.line{
+				fill: none;
+      			stroke-width: 1.5px;
+			}
+			.line2{
+				fill: none;
+      			stroke-width: 6px;
+			}
 		</style>
 	</head>
 	<body>
@@ -69,10 +77,32 @@
 	      	var g = svg.append("g")
 				.attr("transform", "translate(10, 0)")
 
+
+			var lineGraph = svg.append("path")
+		
+			var line = d3.svg.line()
+				.x(function(d) { return d.cx.animVal.value; })
+				.y(function(d) { return d.cy.animVal.value; })
+			
+			var line_fixe_y = d3.svg.line()
+				.x(function(d,i) { return 50 })
+				.y(function(d,i) { return 25+i*440; })
+			var line_fixe_x = d3.svg.line()
+				.x(function(d,i) { return 50+i*3600 })
+				.y(function(d,i) { return 465; })
+
+			var data_fixe = []
+				data_fixe.push({"x" : 100, "y" : 107})
+				data_fixe.push({"x" : 1000, "y" : 107})
+
 		    var current_gen_number = 1
 		    var max_points         = 0
 	    	var all_points         = []
 	    	var all_gen_number     = []
+
+	    	var data_line_inter_x  = []
+	    	var data_line_inter_y  = []
+
 	    	var all_matchs         = {}
 	    	var all_stats          = {}
 		    d3.json("data/data_stats_matchs.json", function(data) {
@@ -144,7 +174,7 @@
 					g.selectAll("text").remove();		   			
 					g.selectAll(".value").remove();		   			
 					g.selectAll("circle").remove();		   			
-					g.selectAll("circle2").remove();		   			
+					g.selectAll("path").remove();		   			
 
 		   			g.selectAll("text").data(scale).enter()
 						.append("text")
@@ -163,9 +193,22 @@
 						.style("font-family", "monospace");
 
 					g.selectAll("circle").data(all_stats[current_gen_number]).enter().append("circle")
-						.attr("cx", function(d) {var x = 85; if(d.color == 0){ x = 80; } else{x = 90;} return x+d.i*120;})
-						.attr("cy", function(d) {return 30 + (max_points-d.score) * 30.4;})
-						.attr("r", function(d) {return 4;})
+						.attr("cx", function(d) {
+							var x = 85;
+							if(d.color == 0){ x = 80; } 
+							else{x = 90;}
+							res = x+d.i*120;
+							data_line_inter_x.push(res);
+							return res;
+						})
+						.attr("cy", function(d) {
+							res = 30 + (max_points-d.score) * 30.4;
+							data_line_inter_y.push(res);
+							return res;
+						})
+						.attr("r", function(d) {
+							return 4;
+						})
 						.attr("id", function(d){return d.id;})
 						.style("fill", function(d){return to_color(d.color);})
 						.on("mouseover", function(d){
@@ -177,11 +220,49 @@
         					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "");
 
     					});
+
+    				data_inter_points = [];
+    				for(var i = 0; i < data_line_inter_x.length; i++){
+    					obj = {"x" : data_line_inter_x[i], "y" : data_line_inter_y[i]};
+    					data_inter_points.push(obj);
+    				}
+    				data_lines_todraw = []
+    				for(var i = 0; i < data_inter_points.length; i+=2){
+    					data1 = data_inter_points[i];
+    					data2 = data_inter_points[i+1];
+    					data1.x += 5; 
+    					data2.x -= 5; 
+    					tab = [data1, data2]
+    					data_lines_todraw.push(tab);
+    				}
+
+    				var test = d3.svg.line()
+    									.x(function(d){
+    										return d.x;
+    									})
+    									.y(function(d){
+    										return d.y
+    									});
+    				g.selectAll("path_inter").data(data_lines_todraw).enter().append("path")
+    					.attr("class", "line2")
+    					.attr("stroke", "#686868")
+    					.attr("d", function(d){
+    						console.log(d);
+    						return test(d);
+						})
+    					.style("stroke-dasharray", ("8, 5"));
+	   				g.selectAll("path_y").data([data_fixe]).enter().append("path")
+						.attr("class", "line")
+						.attr("stroke", "black")
+						.attr("d", line_fixe_y);
+					g.selectAll("path_x").data([data_fixe]).enter().append("path")
+						.attr("class", "line")
+						.attr("stroke", "black")
+						.attr("d", line_fixe_x);
 	   			}
 
 	   			repaint();
 		   	});
-
 
 
 		</script>
