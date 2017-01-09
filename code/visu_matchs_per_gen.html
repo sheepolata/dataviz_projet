@@ -102,6 +102,7 @@
 		    		nb = current_gen["Generation"];
 		    		all_gen_number.push(nb);
 		    		matchs = current_gen["Matchs"];
+		    		nb_matchs = matchs.length;
 		    		all_matchs[nb] = []
 		    		all_stats[nb]  = []
 		    		for(var j = 0; j < matchs.length; j++){
@@ -141,7 +142,6 @@
 				});
 		   		max_points = Math.max(...all_points);
 
-		   		var h = 40+16*30
 		   		var w = all_matchs[current_gen_number].length * 90 + 40
 
 
@@ -153,11 +153,11 @@
 					return y * 30.4;
 				}
 		   		var line_fixe_y = d3.svg.line()
-					.x(function(d,i) { return 50 })
-					.y(function(d,i) { return 25+i*440; })
+					.x(function(d) { return 50 })
+					.y(function(d) { return 25+d*440; })
 				var line_fixe_x = d3.svg.line()
-					.x(function(d,i) { return 50+i*3600 })
-					.y(function(d,i) { return 465; })
+					.x(function(d) { return 50+d*nb_matchs*92 })
+					.y(function(d) { return 465; })
 
 		   		scale = []
 		   		for(var i = max_points; i >= 0; i--){
@@ -277,11 +277,11 @@
     						return coord(d);
 						})
     					.style("stroke-dasharray", ("8, 5"));
-	   				g.selectAll("path_y").data([{}, {}]).enter().append("path")
+	   				g.selectAll("path_y").data([[0, 1]]).enter().append("path")
 						.attr("class", "line")
 						.attr("stroke", "black")
 						.attr("d", line_fixe_y);
-					g.selectAll("path_x").data([{}, {}]).enter().append("path")
+					g.selectAll("path_x").data([[0, 1]]).enter().append("path")
 						.attr("class", "line")
 						.attr("stroke", "black")
 						.attr("d", line_fixe_x);
