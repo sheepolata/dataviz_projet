@@ -47,6 +47,10 @@
 				fill: none;
       			stroke-width: 6px;
 			}
+			.line_tooltip{
+				fill: none;
+      			stroke-width: 2px;
+			}
 		</style>
 	</head>
 	<body>
@@ -78,18 +82,11 @@
 				.attr("transform", "translate(10, 0)")
 
 
-			var lineGraph = svg.append("path")
+			// var lineGraph = svg.append("path")
 		
 			var line = d3.svg.line()
 				.x(function(d) { return d.cx.animVal.value; })
 				.y(function(d) { return d.cy.animVal.value; })
-			
-			var line_fixe_y = d3.svg.line()
-				.x(function(d,i) { return 50 })
-				.y(function(d,i) { return 25+i*440; })
-			var line_fixe_x = d3.svg.line()
-				.x(function(d,i) { return 50+i*3600 })
-				.y(function(d,i) { return 465; })
 
 			var data_fixe = []
 				data_fixe.push({"x" : 100, "y" : 107})
@@ -99,9 +96,6 @@
 		    var max_points         = 0
 	    	var all_points         = []
 	    	var all_gen_number     = []
-
-	    	var data_line_inter_x  = []
-	    	var data_line_inter_y  = []
 
 	    	var all_matchs         = {}
 	    	var all_stats          = {}
@@ -152,73 +146,117 @@
 		   		max_points = Math.max(...all_points);
 
 		   		var h = 40+16*30
-		   		var w = all_matchs[current_gen_number].length * 120 + 40
+		   		var w = all_matchs[current_gen_number].length * 90 + 40
 
-		   		var xscale = d3.scale.linear()
-					.domain([0, max_points])
-					.range([0, h]);
 
-				var yscale = d3.scale.linear()
+				var xscale = d3.scale.linear()
 					.domain([0, all_matchs[current_gen_number].length])
 					.range([0, w])
+
+				var yscale = function(y){
+					return y * 30.4;
+				}
+		   		var line_fixe_y = d3.svg.line()
+					.x(function(d,i) { return 50 })
+					.y(function(d,i) { return 25+i*440; })
+				var line_fixe_x = d3.svg.line()
+					.x(function(d,i) { return 50+i*3600 })
+					.y(function(d,i) { return 465; })
 
 		   		scale = []
 		   		for(var i = max_points; i >= 0; i--){
 		   			scale.push(i);
 		   		}
-		   		var scale_aff_points = d3.scale.linear()
-					.range([100, 300])
-					.domain([0, max_points]);
+
+		   		var text_process = function(str){
+		   			tmp = str.split("vs");
+		   			res = tmp[0] + "</br>vs</br>" + tmp[1];
+		   			// console.log(res);
+		   			return res;
+		   		}
 
 		   		var repaint = function(){
-					g.selectAll("text").remove();		   			
-					g.selectAll(".value").remove();		   			
-					g.selectAll("circle").remove();		   			
-					g.selectAll("path").remove();		   			
+					g.selectAll("text").remove();
+					g.selectAll(".value").remove();
+					g.selectAll("circle").remove();
+					g.selectAll("path").remove();
+
+					var data_line_inter_x  = []
+	    			var data_line_inter_y  = []
+
+	    			var rayon_cercle = 6;
+
+
 
 		   			g.selectAll("text").data(scale).enter()
 						.append("text")
 						.text(function(d) { return d;})
 						.attr("x", 30 )
-						.attr("y", function(d,i) { return 40+i*30; })
+						.attr("y", function(d,i) { return 35+yscale(i); })
 						.style("font-family", "monospace");
 
 					g.selectAll(".value").data(all_matchs[current_gen_number]).enter()
 						.append("text")
-						.html(function(d) {return d["label"]; })
+						.html(function(d) {return text_process(d["label"]); })
 						.attr("id", function(d){return d["label"]; })
 						.attr("class", "value")
-						.attr("x", function(d,i) { return 40 + yscale(i)/*40+i*120*/; })
-						.attr("y", max_points * 30 + 60)
-						.style("font-family", "monospace");
+						.attr("x", function(d,i) { return 40 + xscale(i)/*40+i*120*/; })
+						.attr("y", yscale(max_points) + 55)
+						.style("font-family", "monospace")
+						// .insert("span", ":first-child")
+						// .attr("style", "color:blue");
 
+
+					
+    				var coord = d3.svg.line()
+    									.x(function(d){
+    										return d.x;
+    									})
+    									.y(function(d){
+    										return d.y
+    									});
 					g.selectAll("circle").data(all_stats[current_gen_number]).enter().append("circle")
 						.attr("cx", function(d) {
 							var x = 85;
 							if(d.color == 0){ x = 80; } 
 							else{x = 90;}
-							res = x+d.i*120;
+							res = xscale(d.i) + x;
 							data_line_inter_x.push(res);
 							return res;
 						})
 						.attr("cy", function(d) {
-							res = 30 + (max_points-d.score) * 30.4;
+							res = yscale(max_points-d.score) + 30;
 							data_line_inter_y.push(res);
 							return res;
 						})
 						.attr("r", function(d) {
-							return 4;
+							return rayon_cercle;
 						})
 						.attr("id", function(d){return d.id;})
 						.style("fill", function(d){return to_color(d.color);})
 						.on("mouseover", function(d){
-        					d3.selectAll("#" + d.id).transition().duration(200).attr("r", 8);
+							data_line_tooltip = []
+        					d3.selectAll("#" + d.id).transition().duration(200).attr("r", rayon_cercle*2);
+        					d3.selectAll("#" + d.id).each(function(){
+        						x = d3.select(this).attr("cx");
+        						y = d3.select(this).attr("cy");
+        						if(x != null && y != null){
+	        						tmp = [{"x" : x, "y" : y}, {"x" : 45, "y" : y}]
+	        						data_line_tooltip.push(tmp);
+	        					}
+        						// console.log(data_line_tooltip)
+        					})
         					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "bold");
+        					g.selectAll("path_tooltip").data(data_line_tooltip).enter().append("path")
+								.attr("class", "line_tooltip")
+								.attr("stroke", "black")
+								.attr("d", coord)
+								.style("stroke-dasharray", ("8, 5"));;
     					})
     					.on("mouseout", function(d){
-        					d3.selectAll("#" + d.id).transition().duration(200).attr("r", 4);
+        					d3.selectAll("#" + d.id).transition().duration(200).attr("r", rayon_cercle);
         					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "");
-
+        					g.selectAll(".line_tooltip").remove();
     					});
 
     				data_inter_points = [];
@@ -236,19 +274,11 @@
     					data_lines_todraw.push(tab);
     				}
 
-    				var test = d3.svg.line()
-    									.x(function(d){
-    										return d.x;
-    									})
-    									.y(function(d){
-    										return d.y
-    									});
     				g.selectAll("path_inter").data(data_lines_todraw).enter().append("path")
     					.attr("class", "line2")
     					.attr("stroke", "#686868")
     					.attr("d", function(d){
-    						console.log(d);
-    						return test(d);
+    						return coord(d);
 						})
     					.style("stroke-dasharray", ("8, 5"));
 	   				g.selectAll("path_y").data([data_fixe]).enter().append("path")
@@ -261,6 +291,10 @@
 						.attr("d", line_fixe_x);
 	   			}
 
+	   			// g.on("scroll", function(d){console.log("hello")})
+	   			// console.log("hey")
+	   			// d3.select("body").on("scroll", function(d){console.log("hello")})
+	   			// console.log("hey")
 	   			repaint();
 		   	});
 
