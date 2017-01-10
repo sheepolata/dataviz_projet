@@ -54,10 +54,36 @@
 			.arc text {
 				font: 10px sans-serif;
 				text-anchor: middle;
+				color: #fff;
 			}
 			.arc path {
 				stroke: #fff;
 			}
+			.title_piechart{
+				font-size: 100%;
+				position: absolute;
+				top: 850px;
+				left: 115px;
+			}
+			div.tooltip {
+		        color: #222;
+		        background-color: #fff;
+		        padding: .5em;
+		        text-shadow: #f5f5f5 0 1px 0;
+		        border-radius: 2px;
+		        opacity: 0.9;
+		        position: absolute;
+		        
+		    }
+		    div.tooltip_point {
+		        color: #222;
+		        background-color: #ccc;
+		        padding: .5em;
+		        text-shadow: #f5f5f5 0 1px 0;
+		        border-radius: 2px;
+		        opacity: 0.9;
+		        position: absolute;
+		    }
 		</style>
 	</head>
 	<body>
@@ -70,10 +96,18 @@
 		<div class="legend_graph_x" id="l_g_x">
 			Points
 		</div>
+		<div class="title_piechart" id="t_pc">
+			Titre Pie Chart
+		</div>
 		<script src="http://d3js.org/queue.v1.min.js"></script>
 		<script type="text/javascript">
 
 	    	function process_data(error, /*results*/ json1, json2){
+
+	    		var tooltip = d3.select('body').append('div')
+            		.attr('class', 'hidden tooltip');
+            	var tooltip_point = d3.select('body').append('div')
+            		.attr('class', 'hidden tooltip_point');
 
 	    		gen       = json1["Generations"]
 	    		gen_strat = json2["generations"]
@@ -94,18 +128,31 @@
 	    		max_points = calculate_max_points(gen);
 
 	    		var display_size_match = 98;
-	    		var pie_chart_radius   = 50;
+	    		var pie_chart_radius   = 150;
 
 				var to_color = function(x){
 					if(x == 0) return "blue";
 					else if (x == 1) return "red";
 				};
 
-				var width  = gen.length * 160;
-				var height = max_points * 40;
+				function get_label(_class){
+					if(_class == "dumb"){
+						return "Dumb Strategy";
+					}
+					if(_class == "def"){
+						return "Defensive Strategy";
+					}
+					if(_class == "off"){
+						return "Offensive Strategy";
+					}
+				}
+
+				var width  = gen[0]["Matchs"].length * 105;
+				var height = max_points * 40 + 250;
 
 				var color_piechart = d3.scale.ordinal()
-    				.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+					.domain(["dumb", "off", "def"])
+    				.range(["#9da825", "#f5890c", "#002eab"]);
 
 				var svg = d3.select("body")
 					.append("svg")
@@ -114,6 +161,8 @@
 
 		      	var g = svg.append("g")
 					.attr("transform", "translate(10, 0)")
+
+				// svg.append("garc")
 
 				var repaint = function(nb_gen){
 			   		scale = []
@@ -125,10 +174,22 @@
 					g.selectAll(".value").remove();
 					g.selectAll("circle").remove();
 					g.selectAll("path").remove();
+					svg.selectAll(".arc").remove();
 
-			   		d3.csv("data/data_strat_gen" + nb_gen + ".csv", function(error, data) {
+					d3.selectAll(".title_piechart")
+						.text("Strategy repartition for Generation " + nb_gen)
+						.style("top", (height + 30) + "px")
+
+
+					
+			   		d3.csv("data/data_strat_gen" + nb_gen + ".csv", type, function(error, data) {
 						if (error) throw error;
-						
+						total = 0;
+						for(i in data){
+							total += data[i].value
+						}
+
+
 						var arc = d3.svg.arc()
 						    .outerRadius(pie_chart_radius - 10)
 						    .innerRadius(0);
@@ -143,19 +204,40 @@
 
 						var garc = svg.selectAll(".arc")
 							.data(pie(data))
-							.enter().append("garc")
+							.enter().append("g")
 							.attr("class", "arc")
-							.attr("transform", "translate(10, 100)");
+							.attr("transform", "translate(250, " + (height - pie_chart_radius) + ")")
+							.on("mouseout", function(){
+								tooltip.classed('hidden', true)
+								tooltip.remove();
+								tooltip = d3.select('body').append('div')
+									.attr('class', 'hidden tooltip');
+							})
+							.on("mousemove", function(d){
+								var mouse = d3.mouse(svg.node()).map(function(d) {
+									return parseInt(d);
+								});
+								tooltip.classed('hidden', false)
+									.html(get_label(d.data.class) + "</br>" + ((d.data.value / total)*100).toFixed(2) + "%")
+									.attr("id", "tooltip")
+									.attr('style', 'left:' + (mouse[0] + 15) +
+										'px; top:' + (mouse[1] - 35) + 'px')
+							});
 
 						garc.append("path")
 							.attr("d", arc)
-							.style("fill", function(d) { color_piechart(d.data.value); });
+							.style("fill", function(d) { return color_piechart(d.data.class); });
 
 						garc.append("text")
 							.attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
 							.attr("dy", ".35em")
 							.text(function(d) { return d.data.class	; });
 					});
+
+					function type(d) {
+						d.value = +d.value;
+						return d;
+					}
 
 
 					var data_line_inter_x  = []
@@ -217,8 +299,15 @@
 	        						tmp = [{"x" : x, "y" : y}, {"x" : 45, "y" : y}]
 	        						data_line_tooltip.push(tmp);
 	        					}
-        						// console.log(data_line_tooltip)
         					})
+        					var mouse = d3.mouse(svg.node()).map(function(d) {
+								return parseInt(d);
+							});
+							tooltip_point.classed('hidden', false)
+								.html(d.score + " points")
+								.attr("id", "tooltip_point")
+								.attr('style', 'left:' + (mouse[0] + 15) +
+									'px; top:' + (mouse[1] - 15) + 'px')
         					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "bold");
         					g.selectAll("path_tooltip").data(data_line_tooltip).enter().append("path")
 								.attr("class", "line_tooltip")
@@ -230,6 +319,10 @@
         					d3.selectAll("#" + d.id).transition().duration(200).attr("r", rayon_cercle);
         					d3.selectAll(".value").filter(function(){return this.id == d.id}).transition(200).style("font-weight", "");
         					g.selectAll(".line_tooltip").remove();
+        					tooltip_point.classed('hidden', true)
+							tooltip_point.remove();
+							tooltip_point = d3.select('body').append('div')
+								.attr('class', 'hidden tooltip_point');
     					});
 
     				data_inter_points = [];
@@ -262,16 +355,6 @@
 						.attr("class", "line")
 						.attr("stroke", "black")
 						.attr("d", line_fixe_x);
-
-					// g.selectAll("path_pie").data(json2).enter().append("path")
-					// 	.attr("d", arc)
-					// 	.style("fill", function(d) {console.log(d);return color(d.generation); });
-
-				 //    g.append("text")
-					// 	.attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-					// 	.attr("dy", ".35em")
-					// 	.text(function(d) { return d.generation; });
-
 					
 	   			}
 

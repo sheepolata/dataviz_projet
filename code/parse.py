@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import json
+import json, os
 
 """Cree plusieurs csv pour la pie chart, uniquement ubuntu"""
 def data_strat_csv(in_file,out_file="data/data_strat_gen"):
@@ -257,15 +257,19 @@ def result_match(in_file, out_file="data/data_stats_matchs.json"):
 
 	fichier_res.write(json.dumps(dico_match, indent=4, sort_keys=True))	
 	
-	
+
+
 if __name__ == '__main__':
+
 	"""Ubuntu 16.04"""
-	name_and_stats("data/60ind_20gen.json")
-	genealogie_simple("data/60ind_20gen.json")
-	stat_gen("data/60ind_20gen.json")
-	result_match("data/60ind_20gen.json")
-	data_strat("data/60ind_20gen.json")
-	data_strat_csv("data/60ind_20gen.json")
+	file1 = "data/60ind_20gen.json"
+	file2 = "data/60ind_60gen.json"
+	name_and_stats(file2)
+	genealogie_simple(file2)
+	stat_gen(file2)
+	result_match(file2)
+	data_strat(file2)
+	data_strat_csv(file2)
 
 	"""Windows"""
 	# name_and_stats("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)

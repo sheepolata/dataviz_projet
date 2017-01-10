@@ -172,8 +172,6 @@
 						var mouse = d3.mouse(svg.node()).map(function(d) {
 							return parseInt(d);
 						  });
-						console.log(data["Generations"][0]["Force"]);
-						console.log(d);
 						d3.selectAll("circle").filter(function(){return this.id == d.gen}).transition().duration(200).attr("r", tailleCercle*2);
 						d3.selectAll(".value").filter(function(){return this.id == d.gen}).transition(200).style("font-weight", "bold");
 						tooltip.classed('hidden', false)
