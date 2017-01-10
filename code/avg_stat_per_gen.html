@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
+  <title>Visualisation Stats</title>
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <style>
     body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;}
@@ -17,75 +18,101 @@
         opacity: 0.9;
         position: absolute;
     }
+	.legend_graph_x{
+				font-size: 80%;
+				position: absolute;
+				top: 378px;
+				left: 0px;
+				transform: rotate(-90deg);
+	}
+	.legend_graph_x2{
+				font-size: 80%;
+				position: absolute;
+				top: 100px;
+				left: 0px;
+				transform: rotate(-90deg);
+	}
+
+	.legend_graph_y{
+				font-size: 80%;
+				position: absolute;
+				top: 600px;
+				left: 600px;
+	}
 
   </style>
 </head>
 
 <body>
-
+		
+		<div class="legend_graph_x2" id="l_g_x2">
+			Taux de Mutation
+		</div>
+		<div class="legend_graph_x" id="l_g_x">
+			Valeur Statistique
+		</div>
+		<div class="legend_graph_y" id="l_g_y">
+			Generation
+		</div>
 	  <script>
 	  
-		var tooltip = d3.select('body').append('div')
-            .attr('class', 'hidden tooltip');
-			
-		var svgHeight 	= 17*37;
-		var svgWidth 	= 24*50;
 		
-		var svg = d3.select("body")
-			.append("div")
-				.style("height", "100%")
-				.style("width", "100%")
-				.style("overflow", "scroll")
-			.append("svg")
-				.attr("width", svgWidth)
-				.attr("height", svgHeight)
-
-		var width = 960;
-		var height = 500;	  
-		  
-	 
-		
-		var x = d3.scale.ordinal()
-			.rangeRoundBands([0, width], .5);
-
-		var y = d3.scale.linear()
-			.range([height, height - 200]);
-		
-		var g = svg.append("g")
-			.attr("transform", "translate(10, 0)")
-		
-		var lineGraph = svg.append("path")
-		
-		var line = d3.svg.line()
-			.x(function(d) { return d.cx.animVal.value; })
-			.y(function(d) { return d.cy.animVal.value; })
-		
-		var lineFix = d3.svg.line()
-			.x(function(d,i) { return 40+i*970 })
-			.y(function(d,i) { return 107; })
-		var lineFix2 = d3.svg.line()
-			.x(function(d,i) { return 40 })
-			.y(function(d,i) { return 10+i*570; })
-		var lineFix3 = d3.svg.line()
-			.x(function(d,i) { return 40+i*970 })
-			.y(function(d,i) { return 580; })
-		var lineFix4 = d3.svg.line()
-			.x(function(d,i) { return 40+i*970 })
-			.y(function(d,i) { return 170; })
-			
-		var fix = []
-		fix.push({"x" : 100, "y" : 107})
-		fix.push({"x" : 1000, "y" : 107})
-		
-			
-		var scaleX = [];
-		var scaleY = [.1,.075, .05,.025,0,10,9,8,7,6,5,4,3,2,1,0];
-		
-		var lineData = [];
 		
 		d3.json("data/data_stats_gen.json", function(data) {
-			x.domain([0,20]);
-			y.domain([0, 10]);
+			var tooltip = d3.select('body').append('div')
+            .attr('class', 'hidden tooltip');
+			
+			var w = data["Generations"].length
+			var svgHeight 	= 17*36;
+			var svgWidth 	= (w+4)*50;
+			
+			var svg = d3.select("body")
+				.append("div")
+					.style("height", "100%")
+					.style("width", "100%")
+					.style("overflow", "scroll")
+				.append("svg")
+					.attr("width", svgWidth)
+					.attr("height", svgHeight)
+		  
+			
+			var ecartPoint = 50;
+			var margeX = 160;
+			var tailleCercle = 4;
+			
+			var g = svg.append("g")
+				.attr("transform", "translate(10, 0)")
+			
+			var lineGraph = svg.append("path")
+			
+			var line = d3.svg.line()
+				.x(function(d) { return d.cx.animVal.value; })
+				.y(function(d) { return d.cy.animVal.value; })
+			
+			var lineFix = d3.svg.line()
+				.x(function(d,i) { return 120 })
+				.y(function(d,i) { return 200+i*20; })
+			var lineFix2 = d3.svg.line()
+				.x(function(d,i) { return 120 })
+				.y(function(d,i) { return i*9; })
+			var lineFix3 = d3.svg.line()
+				.x(function(d,i) { return i*60 })
+				.y(function(d,i) { return 580; })
+			var lineFix4 = d3.svg.line()
+				.x(function(d,i) { return i*60 })
+				.y(function(d,i) { return 170; })
+				
+			
+				
+			var scaleX = [];
+			var scaleY = [.1,.075, .05,.025,[],10,9,8,7,6,5,4,3,2,1, []];
+			
+			var lineData = [];
+
+			/*var xscale = d3.scale.linear()
+				.domain([0, all_matchs[current_gen_number].length])
+				.range([0, w])*/
+				
 			for (var l = 0; l < data["Generations"].length; l++){    
 				scaleX.push(l+1);
 				lineData.push({"gen" : l+1, "stat" : "force", "x" : data["Generations"][l]["Numero_Gen"], "y": data["Generations"][l]["Force"]});
@@ -100,7 +127,7 @@
 				.append("text")
 				.style("text-anchor", "start")
 				.text(function(d,i) { return d;})
-				.attr("x", 10 )
+				.attr("x", 90 )
 				.attr("y", function(d,i) { return 40+i*37; })
 				.style("font-family", "monospace");
 				
@@ -109,7 +136,7 @@
 				.text(function(d, i) { return d; })
 				.attr("id", function(d){ return d;})
 				.attr("class", "value")
-				.attr("x", function(d,i) { return 50+i*50; })
+				.attr("x", function(d,i) { return margeX+i*ecartPoint; })
 				.attr("y", 596)
 				.style("font-family", "monospace");	
 			g.selectAll(".value2").data(scaleX).enter()
@@ -117,18 +144,18 @@
 				.text(function(d, i) { return d; })
 				.attr("id", function(d){ return d;})
 				.attr("class", "value")
-				.attr("x", function(d,i) { return 50+i*50; })
+				.attr("x", function(d,i) { return margeX+i*ecartPoint; })
 				.attr("y", 187)
 				.style("font-family", "monospace");	
 			
 	
 				
 			g.selectAll("circle").data(lineData).enter().append("circle")
-				.attr("cx", function(d) {return d.x*50+5;})
-				.attr("cy", function(d) {if (d.stat == "mut") return 40+(0.1-d.y)*1500; 
-									     else if (d.stat == "mutFix") return 40+(0.1-d.y)*1500; 
-										 else return 237+(10-d.y)*37;})
-				.attr("r", function(d) {return 4;})
+				.attr("cx", function(d) {return 115+d.x*ecartPoint;})
+				.attr("cy", function(d) {if (d.stat == "mut") return 35+(0.1-d.y)*1500; 
+									     else if (d.stat == "mutFix") return 35+(0.1-d.y)*1500; 
+										 else return 237+(10-d.y)*33;})
+				.attr("r", function(d) {return tailleCercle;})
 				.attr("id", function(d){return d.gen;})
 				.attr("stat", function(d){if (d.stat == "force") return "force";
 										   else if (d.stat == "intel") return "intel";
@@ -147,17 +174,17 @@
 						  });
 						console.log(data["Generations"][0]["Force"]);
 						console.log(d);
-						d3.selectAll("circle").filter(function(){return this.id == d.gen}).transition().duration(200).attr("r", 8);
+						d3.selectAll("circle").filter(function(){return this.id == d.gen}).transition().duration(200).attr("r", tailleCercle*2);
 						d3.selectAll(".value").filter(function(){return this.id == d.gen}).transition(200).style("font-weight", "bold");
 						tooltip.classed('hidden', false)
-							.html("Force: " + data["Generations"][d.gen]["Force"] + "</br>Intelligence: " + data["Generations"][d.gen]["Intelligence"] + "</br>Vitesse: " + data["Generations"][d.gen]["Vitesse"] + "</br>Mutation: " + Math.round(data["Generations"][d.gen]["Mutation"], 2))
+							.html("<font color=\"blue\"> Force: " + data["Generations"][d.gen-1]["Force"] + "</font></br><font color=\"red\">Intelligence: " + data["Generations"][d.gen-1]["Intelligence"] + "</font></br><font color=\"green\">Vitesse: " + data["Generations"][d.gen-1]["Vitesse"] + "</font></br><font color=\"orange\">Mutation: " + (data["Generations"][d.gen-1]["Mutation"]*100).toFixed(2) + "%</font>")
 							.attr("id", "tooltip")
 							.attr('style', 'left:' + (mouse[0] + 15) +
 								'px; top:' + (mouse[1] - 35) + 'px')
 						
 					})
 				.on("mouseout", function(d){
-						d3.selectAll("circle").filter(function(){return this.id == d.gen}).transition().duration(200).attr("r", 3);
+						d3.selectAll("circle").filter(function(){return this.id == d.gen}).transition().duration(200).attr("r", tailleCercle);
 						d3.selectAll(".value").filter(function(){return this.id == d.gen}).transition(200).style("font-weight", "")
 						tooltip.classed('hidden', true)
 						tooltip.remove();
@@ -185,18 +212,25 @@
 			    .attr("class", "line")
 				.attr("stroke", "grey")
 				.attr("d", line);
-			g.selectAll("path6").data([fix]).enter().append("path")
+				
+			g.selectAll("path9").data([data["Generations"]]).enter().append("path")
+				.attr("class", "line")
+				.attr("stroke", "black")
+				.attr("d", lineFix);
+			g.selectAll("path6").data([data["Generations"]]).enter().append("path")
 				.attr("class", "line")
 				.attr("stroke", "black")
 				.attr("d", lineFix2);
-			g.selectAll("path7").data([fix]).enter().append("path")
+			g.selectAll("path7").data([data["Generations"]]).enter().append("path")
 				.attr("class", "line")
 				.attr("stroke", "black")
 				.attr("d", lineFix3);
-			g.selectAll("path8").data([fix]).enter().append("path")
+			g.selectAll("path8").data([data["Generations"]]).enter().append("path")
 				.attr("class", "line")
 				.attr("stroke", "black")
 				.attr("d", lineFix4);
+				
+				
 			
 		 });
 		</script>
