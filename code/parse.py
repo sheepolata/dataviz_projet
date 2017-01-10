@@ -2,6 +2,98 @@
 
 import json
 
+"""Cree plusieurs csv pour la pie chart, uniquement ubuntu"""
+def data_strat_csv(in_file,out_file="data/data_strat_gen"):
+	fichier = open(in_file, 'r')
+
+	data = json.load(fichier)
+	generation = data["generations"]
+
+	nb_strat_total = []
+	nb_dumb        = []
+	nb_off         = []
+	nb_def         = []
+
+	for gen in generation:
+		matchs = gen["matchs"]
+		tmp_total = 0
+		tmp_dumb  = 0
+		tmp_off   = 0
+		tmp_def   = 0
+		for m in matchs:
+			p1 = m["player_1"]
+			p2 = m["player_2"]
+			fav1 = p1["favorite_strategy"]
+			fav2 = p2["favorite_strategy"]
+			tmp_total += fav1["def"] + fav1["dumb"] + fav1["off"] + fav2["def"] + fav2["dumb"] + fav2["off"]
+			tmp_dumb  += fav1["dumb"] + fav2["dumb"]
+			tmp_off   += fav1["off"] + fav2["off"]
+			tmp_def   += fav1["def"] + fav2["def"]
+		nb_strat_total.append(tmp_total)
+		nb_dumb       .append(tmp_dumb)
+		nb_off        .append(tmp_off)
+		nb_def        .append(tmp_def)
+
+	for i in range(len(generation)):
+		fichier_res = open(out_file+str(i+1)+".csv", 'w')
+		fichier_res.write("class,value\n")
+		fichier_res.write("dumb,"+ str(nb_dumb[i]) + "\n")
+		fichier_res.write("off," + str(nb_off[i])  + "\n")
+		fichier_res.write("def," + str(nb_def[i]))
+		fichier_res.close()
+
+
+
+"""Cree un fichier json contenant les informations pour cree la pie chart des strategies"""
+def data_strat(in_file, out_file="data/data_strats.json"):
+	fichier = open(in_file, 'r')
+
+	data = json.load(fichier)
+	generation = data["generations"]
+
+	nb_strat_total = []
+	nb_dumb        = []
+	nb_off         = []
+	nb_def         = []
+
+	for gen in generation:
+		matchs = gen["matchs"]
+		tmp_total = 0
+		tmp_dumb  = 0
+		tmp_off   = 0
+		tmp_def   = 0
+		for m in matchs:
+			p1 = m["player_1"]
+			p2 = m["player_2"]
+			fav1 = p1["favorite_strategy"]
+			fav2 = p2["favorite_strategy"]
+			tmp_total += fav1["def"] + fav1["dumb"] + fav1["off"] + fav2["def"] + fav2["dumb"] + fav2["off"]
+			tmp_dumb  += fav1["dumb"] + fav2["dumb"]
+			tmp_off   += fav1["off"] + fav2["off"]
+			tmp_def   += fav1["def"] + fav2["def"]
+		nb_strat_total.append(tmp_total)
+		nb_dumb       .append(tmp_dumb)
+		nb_off        .append(tmp_off)
+		nb_def        .append(tmp_def)
+
+
+	json_tmp = []
+	for i in range(len(nb_strat_total)):
+		json_tmp.append({})
+		json_tmp[i]["generation"]     = i+1
+		json_tmp[i]["nb_total_strat"] = nb_strat_total[i] 
+		json_tmp[i]["nb_dumb"]        = nb_dumb[i] 
+		json_tmp[i]["nb_off"]         = nb_off[i] 
+		json_tmp[i]["nb_def"]         = nb_def[i] 
+
+	json_data = {"generations" : json_tmp}
+
+	fichier_res = open(out_file, 'w')
+
+	fichier_res.write(json.dumps(json_data, indent=4, sort_keys=True))
+		
+
+
 """Cree un fichier json contenant le nom de chaque agent, ses stats, la somme de celle ci, sa premiere generation et sa derniere generation"""
 def name_and_stats(in_file, out_file="data/data_noms_stats.json"):
 	#Beta
@@ -167,12 +259,17 @@ def result_match(in_file, out_file="data/data_stats_matchs.json"):
 	
 	
 if __name__ == '__main__':
+	"""Ubuntu 16.04"""
 	name_and_stats("data/60ind_20gen.json")
 	genealogie_simple("data/60ind_20gen.json")
 	stat_gen("data/60ind_20gen.json")
 	result_match("data/60ind_20gen.json")
+	data_strat("data/60ind_20gen.json")
+	data_strat_csv("data/60ind_20gen.json")
 
+	"""Windows"""
 	# name_and_stats("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)
 	# genealogie_simple("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)
 	# stat_gen("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", TOADD)
 	# result_match("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", "C:/Users/Janjak/Desktop/testDV/Projet/data_stats_matchs.json")
+	# data_strat("C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json", "C:/Users/Janjak/Desktop/testDV/Projet/60ind_20gen.json")

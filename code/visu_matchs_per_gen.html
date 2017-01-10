@@ -45,11 +45,18 @@
 			}
 			.line2{
 				fill: none;
-      			stroke-width: 6px;
+      			stroke-width: 4px;
 			}
 			.line_tooltip{
 				fill: none;
       			stroke-width: 2px;
+			}
+			.arc text {
+				font: 10px sans-serif;
+				text-anchor: middle;
+			}
+			.arc path {
+				stroke: #fff;
 			}
 		</style>
 	</head>
@@ -63,126 +70,98 @@
 		<div class="legend_graph_x" id="l_g_x">
 			Points
 		</div>
+		<script src="http://d3js.org/queue.v1.min.js"></script>
 		<script type="text/javascript">
 
-			var to_color = function(x){
-				if(x == 0) return "blue";
-				else if (x == 1) return "red";
-			};
+	    	function process_data(error, /*results*/ json1, json2){
 
-			var width  = 3800;
-			var height = 1080;
+	    		gen       = json1["Generations"]
+	    		gen_strat = json2["generations"]
 
-			var svg = d3.select("body")
-				.append("svg")
-			     	.attr("width", width)
-			      	.attr("height", height)
+	    		function calculate_max_points(gen){
+	    			all_points = []
+	    			for(var i = 0; i < gen.length; i++){
+	    				matchs = gen[i]["Matchs"];
+	    				for(var j = 0; j < matchs.length; j++){
+	    					current_match = matchs[j];
+	    					all_points.push(current_match["p1_points"]);
+		    				all_points.push(current_match["p2_points"]);
+	    				}
+	    			}
+	    			return Math.max(...all_points);
+	    		}
 
-	      	var g = svg.append("g")
-				.attr("transform", "translate(10, 0)")
+	    		max_points = calculate_max_points(gen);
 
+	    		var display_size_match = 98;
+	    		var pie_chart_radius   = 50;
 
-			// var lineGraph = svg.append("path")
-		
-			var line = d3.svg.line()
-				.x(function(d) { return d.cx.animVal.value; })
-				.y(function(d) { return d.cy.animVal.value; })
+				var to_color = function(x){
+					if(x == 0) return "blue";
+					else if (x == 1) return "red";
+				};
 
-		    var current_gen_number = 1
-		    var max_points         = 0
-	    	var all_points         = []
-	    	var all_gen_number     = []
+				var width  = gen.length * 160;
+				var height = max_points * 40;
 
-	    	var all_matchs         = {}
-	    	var all_stats          = {}
-		    d3.json("data/data_stats_matchs.json", function(data) {
-		    	gen = data["Generations"]
-		    	for(var i = 0; i < gen.length; i++){
-		    		current_gen = gen[i];
-		    		nb = current_gen["Generation"];
-		    		all_gen_number.push(nb);
-		    		matchs = current_gen["Matchs"];
-		    		nb_matchs = matchs.length;
-		    		all_matchs[nb] = []
-		    		all_stats[nb]  = []
-		    		for(var j = 0; j < matchs.length; j++){
-		    			current_match = matchs[j];
-		    			
-		    			tmp_match = {};
-		    			tmp_match["label"] = current_match["p1_name"] + "vs" + current_match["p2_name"];
+				var color_piechart = d3.scale.ordinal()
+    				.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
-		    			all_matchs[nb].push(tmp_match);
+				var svg = d3.select("body")
+					.append("svg")
+				     	.attr("width", width)
+				      	.attr("height", height)
 
-		    			tmp_stat = {}
-		    			tmp_stat["score"] = current_match["p1_points"]
-		    			tmp_stat["color"] = current_match["p1_color"]
-		    			tmp_stat["i"]     = j
-		    			tmp_stat["id"]    = current_match["p1_name"] + "vs" + current_match["p2_name"];
-		    			all_stats[nb].push(tmp_stat)
+		      	var g = svg.append("g")
+					.attr("transform", "translate(10, 0)")
 
-		    			tmp_stat = {}
-		    			tmp_stat["score"] = current_match["p2_points"]
-		    			tmp_stat["color"] = current_match["p2_color"]
-		    			tmp_stat["i"]     = j
-		    			tmp_stat["id"]    = current_match["p1_name"] + "vs" + current_match["p2_name"];
-		    			all_stats[nb].push(tmp_stat)
+				var repaint = function(nb_gen){
+			   		scale = []
+			   		for(var i = max_points; i >= 0; i--){
+			   			scale.push(i);
+			   		}
 
-		    			all_points.push(current_match["p1_points"]);
-		    			all_points.push(current_match["p2_points"]);
-		    		}
-		    	}
-		    	max = Math.max(...all_gen_number);
-		    	d3.select('#slider').attr("max", max);
-		    	d3.select('#l_max').text(max);
-				d3.select("#slider").on("input", function() {
-					current_gen_number = +this.value;
-					d3.select('#gen').text("Generation " + current_gen_number)
-					repaint();
-		        	
-				});
-		   		max_points = Math.max(...all_points);
-
-		   		var w = all_matchs[current_gen_number].length * 90 + 40
-
-
-				var xscale = d3.scale.linear()
-					.domain([0, all_matchs[current_gen_number].length])
-					.range([0, w])
-
-				var yscale = function(y){
-					return y * 30.4;
-				}
-		   		var line_fixe_y = d3.svg.line()
-					.x(function(d) { return 50 })
-					.y(function(d) { return 25+d*440; })
-				var line_fixe_x = d3.svg.line()
-					.x(function(d) { return 50+d*nb_matchs*92 })
-					.y(function(d) { return 465; })
-
-		   		scale = []
-		   		for(var i = max_points; i >= 0; i--){
-		   			scale.push(i);
-		   		}
-
-		   		var text_process = function(str){
-		   			tmp = str.split("vs");
-		   			res = tmp[0] + "</br>vs</br>" + tmp[1];
-		   			// console.log(res);
-		   			return res;
-		   		}
-
-		   		var repaint = function(){
 					g.selectAll("text").remove();
 					g.selectAll(".value").remove();
 					g.selectAll("circle").remove();
 					g.selectAll("path").remove();
 
+			   		d3.csv("data/data_strat_gen" + nb_gen + ".csv", function(error, data) {
+						if (error) throw error;
+						
+						var arc = d3.svg.arc()
+						    .outerRadius(pie_chart_radius - 10)
+						    .innerRadius(0);
+
+						var pie = d3.layout.pie()
+							.sort(null)
+							.value(function(d) { return d.value; });
+
+						var labelArc = d3.svg.arc()
+						    .outerRadius(pie_chart_radius - 40)
+						    .innerRadius(pie_chart_radius - 40);
+
+						var garc = svg.selectAll(".arc")
+							.data(pie(data))
+							.enter().append("garc")
+							.attr("class", "arc")
+							.attr("transform", "translate(10, 100)");
+
+						garc.append("path")
+							.attr("d", arc)
+							.style("fill", function(d) { color_piechart(d.data.value); });
+
+						garc.append("text")
+							.attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+							.attr("dy", ".35em")
+							.text(function(d) { return d.data.class	; });
+					});
+
+
 					var data_line_inter_x  = []
 	    			var data_line_inter_y  = []
 
 	    			var rayon_cercle = 6;
-
-
 
 		   			g.selectAll("text").data(scale).enter()
 						.append("text")
@@ -198,19 +177,17 @@
 						.attr("class", "value")
 						.attr("x", function(d,i) { return 40 + xscale(i)/*40+i*120*/; })
 						.attr("y", yscale(max_points) + 55)
-						.style("font-family", "monospace")
-						// .insert("span", ":first-child")
-						// .attr("style", "color:blue");
+						.style("font-family", "monospace");
 
 
 					
     				var coord = d3.svg.line()
-    									.x(function(d){
-    										return d.x;
-    									})
-    									.y(function(d){
-    										return d.y
-    									});
+									.x(function(d){
+										return d.x;
+									})
+									.y(function(d){
+										return d.y
+									});
 					g.selectAll("circle").data(all_stats[current_gen_number]).enter().append("circle")
 						.attr("cx", function(d) {
 							var x = 85;
@@ -285,15 +262,104 @@
 						.attr("class", "line")
 						.attr("stroke", "black")
 						.attr("d", line_fixe_x);
+
+					// g.selectAll("path_pie").data(json2).enter().append("path")
+					// 	.attr("d", arc)
+					// 	.style("fill", function(d) {console.log(d);return color(d.generation); });
+
+				 //    g.append("text")
+					// 	.attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+					// 	.attr("dy", ".35em")
+					// 	.text(function(d) { return d.generation; });
+
+					
 	   			}
 
-	   			// g.on("scroll", function(d){console.log("hello")})
-	   			// console.log("hey")
-	   			// d3.select("body").on("scroll", function(d){console.log("hello")})
-	   			// console.log("hey")
-	   			repaint();
-		   	});
+				var line = d3.svg.line()
+					.x(function(d) { return d.cx.animVal.value; })
+					.y(function(d) { return d.cy.animVal.value; })
 
+			    var current_gen_number = 1
+		    	var all_points         = []
+		    	var all_gen_number     = []
+		    	var all_matchs         = {}
+		    	var all_stats          = {}
+	    		
+		    	for(var i = 0; i < gen.length; i++){
+		    		current_gen = gen[i];
+		    		nb = current_gen["Generation"];
+		    		all_gen_number.push(nb);
+		    		matchs = current_gen["Matchs"];
+		    		nb_matchs = matchs.length;
+		    		all_matchs[nb] = []
+		    		all_stats[nb]  = []
+		    		for(var j = 0; j < matchs.length; j++){
+		    			current_match = matchs[j];
+		    			
+		    			tmp_match = {};
+		    			tmp_match["label"] = current_match["p1_name"] + "vs" + current_match["p2_name"];
+
+		    			all_matchs[nb].push(tmp_match);
+
+		    			tmp_stat = {}
+		    			tmp_stat["score"] = current_match["p1_points"]
+		    			tmp_stat["color"] = current_match["p1_color"]
+		    			tmp_stat["i"]     = j
+		    			tmp_stat["id"]    = current_match["p1_name"] + "vs" + current_match["p2_name"];
+		    			all_stats[nb].push(tmp_stat)
+
+		    			tmp_stat = {}
+		    			tmp_stat["score"] = current_match["p2_points"]
+		    			tmp_stat["color"] = current_match["p2_color"]
+		    			tmp_stat["i"]     = j
+		    			tmp_stat["id"]    = current_match["p1_name"] + "vs" + current_match["p2_name"];
+		    			all_stats[nb].push(tmp_stat)
+		    		}
+		    	}
+		    	max = Math.max(...all_gen_number);
+		    	d3.select('#slider').attr("max", max);
+		    	d3.select('#l_max').text(max);
+				d3.select("#slider").on("input", function() {
+					current_gen_number = +this.value;
+					d3.select('#gen').text("Generation " + current_gen_number)
+					repaint(current_gen_number);
+		        	
+				});
+
+		   		var w = all_matchs[current_gen_number].length * display_size_match + 40
+
+
+				var xscale = d3.scale.linear()
+					.domain([0, all_matchs[current_gen_number].length])
+					.range([0, w])
+
+				var yscale = function(y){
+					return y * 30.4;
+				}
+		   		var line_fixe_y = d3.svg.line()
+					.x(function(d) { return 50 })
+					.y(function(d) { return 25+d*440; })
+				var line_fixe_x = d3.svg.line()
+					.x(function(d) { return 50+d*nb_matchs*(display_size_match+1) })
+					.y(function(d) { return 465; })
+
+
+		   		var text_process = function(str){
+		   			tmp = str.split("vs");
+		   			res = tmp[0] + "</br>vs</br>" + tmp[1];
+		   			// console.log(res);
+		   			return res;
+		   		}
+
+		   		
+
+	   			repaint(1);
+	    	}
+
+	    	queue()
+	    		.defer(d3.json, "data/data_stats_matchs.json")
+	    		.defer(d3.json, "data/data_strats.json")
+	    		.await(process_data);
 
 		</script>
 	</body>
