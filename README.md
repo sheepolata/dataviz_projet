@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 	Data Visualization Project
@@ -13,4 +12,3 @@
 	</tail>
 </html>
 
-</head>
