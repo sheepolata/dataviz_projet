@@ -84,10 +84,20 @@
 		        opacity: 0.9;
 		        position: absolute;
 		    }
+		    .play{
+		    	position: absolute;
+		    	left: 250px;
+		    }
+		    .pause{
+				position: absolute;
+		    	left: 300px;
+		    }
 		</style>
 	</head>
 	<body>
 		<div>
+			<button type="button" class="play">Play</button>
+			<button type="button" class="pause">Pause</button>
 			<input class="slider" id="slider" type="range" value="1" min="1" max="100" step="1" />
 			<span  class="range_title" id="gen">Generation 1</span>
 			<span  class="legend_min"  id="l_min">1</span>
@@ -400,8 +410,8 @@
 		    		}
 		    	}
 		    	max = Math.max(...all_gen_number);
-		    	d3.select('#slider').attr("max", max);
 		    	d3.select('#l_max').text(max);
+		    	d3.select('#slider').attr("max", max);
 				d3.select("#slider").on("input", function() {
 					current_gen_number = +this.value;
 					d3.select('#gen').text("Generation " + current_gen_number)
