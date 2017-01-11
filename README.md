@@ -3,8 +3,8 @@
 	Data Visualization Project
 	</head>
 	<body>
-		<p><a href="http://example.com/">Characteristics Visualization</a></p>
-		<p><a href="http://example.com/">Matches Visualizations</a></p>
+		<p><a href="code/avg_stat_per_gen.html">Characteristics Visualization</a></p>
+		<p><a href="code/visu_matches_per_gen.html">Matches Visualizations</a></p>
 	</body>
 	<tail>
 
