@@ -478,7 +478,7 @@
 	   			repaint(1);
 	    	}
 
-	    	queue()
+	    	d3.queue()
 	    		.defer(d3.json, "data/data_stats_matchs.json")
 	    		.defer(d3.json, "data/data_strats.json")
 	    		.await(process_data);
