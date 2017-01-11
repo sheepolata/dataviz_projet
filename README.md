@@ -9,6 +9,5 @@
 	<tail>
 
 	Antoine GAGET and William RAO FERNANDES
-	</tail>
 </html>
 
