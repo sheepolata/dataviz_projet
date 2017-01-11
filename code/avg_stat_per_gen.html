@@ -128,7 +128,7 @@
 				.style("text-anchor", "start")
 				.text(function(d,i) { return d;})
 				.attr("x", 90 )
-				.attr("y", function(d,i) { return 40+i*37; })
+				.attr("y", function(d,i) {if (i < 5) return 20+i*37; else return 40+i*37 })
 				.style("font-family", "monospace");
 				
 			g.selectAll(".value").data(scaleX).enter()
@@ -152,8 +152,8 @@
 				
 			g.selectAll("circle").data(lineData).enter().append("circle")
 				.attr("cx", function(d) {return 115+d.x*ecartPoint;})
-				.attr("cy", function(d) {if (d.stat == "mut") return 35+(0.1-d.y)*1500; 
-									     else if (d.stat == "mutFix") return 35+(0.1-d.y)*1500; 
+				.attr("cy", function(d) {if (d.stat == "mut") return 15+(0.1-d.y)*1500; 
+									     else if (d.stat == "mutFix") return 15+(0.1-d.y)*1500; 
 										 else return 237+(10-d.y)*33;})
 				.attr("r", function(d) {return tailleCercle;})
 				.attr("id", function(d){return d.gen;})
@@ -177,8 +177,8 @@
 						tooltip.classed('hidden', false)
 							.html("<font color=\"blue\"> Force: " + data["Generations"][d.gen-1]["Force"] + "</font></br><font color=\"red\">Intelligence: " + data["Generations"][d.gen-1]["Intelligence"] + "</font></br><font color=\"green\">Vitesse: " + data["Generations"][d.gen-1]["Vitesse"] + "</font></br><font color=\"orange\">Mutation: " + (data["Generations"][d.gen-1]["Mutation"]*100).toFixed(2) + "%</font>")
 							.attr("id", "tooltip")
-							.attr('style', 'left:' + (mouse[0] + 15) +
-								'px; top:' + (mouse[1] - 35) + 'px')
+							.attr('style', 'left:' + (this.cx.animVal.value + 20) +
+								'px; top:' + (this.cy.animVal.value - 15)  + 'px')
 						
 					})
 				.on("mouseout", function(d){
