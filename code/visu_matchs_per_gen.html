@@ -283,23 +283,31 @@
 										return d.y
 									});
 					g.selectAll("circle").data(all_stats[current_gen_number]).enter().append("circle")
-						.attr("cx", function(d) {
-							var x = 85;
-							if(d.color == 0){ x = 80; } 
-							else{x = 90;}
-							res = xscale(d.i) + x;
-							data_line_inter_x.push(res);
-							return res;
-						})
+						.attr("id", function(d){return d.id;})
 						.attr("cy", function(d) {
 							res = yscale(max_points-d.score) + 30;
 							data_line_inter_y.push(res);
 							return res;
 						})
+						.attr("cx", function(d) {
+							var x = 85;							
+							var tab = []
+							d3.selectAll("#" + d.id).each(function(){
+        						y = d3.select(this).attr("cy");
+        						tab.push(y)
+        					})
+        					tab = [tab[1], tab[2]]
+        					if(tab[0] == tab[1]){
+								if(d.color == 0){ x = 80; } 
+								else{x = 90;}
+        					}
+							res = xscale(d.i) + x;
+							data_line_inter_x.push(res);
+							return res;
+						})
 						.attr("r", function(d) {
 							return rayon_cercle;
 						})
-						.attr("id", function(d){return d.id;})
 						.style("fill", function(d){return to_color(d.color);})
 						.on("mouseover", function(d){
 							data_line_tooltip = []
@@ -346,8 +354,10 @@
     				for(var i = 0; i < data_inter_points.length; i+=2){
     					data1 = data_inter_points[i];
     					data2 = data_inter_points[i+1];
-    					data1.x += 5; 
-    					data2.x -= 5; 
+    					// if(data1.y == data2.y){
+	    				// 	data1.x += 5; 
+	    				// 	data2.x -= 5;
+    					// }
     					tab = [data1, data2]
     					data_lines_todraw.push(tab);
     				}
