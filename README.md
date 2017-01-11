@@ -1,6 +1,6 @@
 <html lang="en">
-	<head>
-	Data Visualization Project
+	<head style = "font-size:220%">
+		Data Visualization Project
 	</head>
 	<body>
 		<p><a href="code/avg_stat_per_gen.html">Characteristics Visualization</a></p>
