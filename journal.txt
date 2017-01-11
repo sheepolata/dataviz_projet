@@ -1,8 +1,14 @@
 30/11/2016 : Création des FSD.
 08/12/2016 : Finialisation de la forme des données.
-15/12/2016 : Début du formatage des données pour la visualisation.
+10/12/2016 : Format des données fini.
+15/12/2016 : Début du formatage/parsing des données pour la visualisation avec un script python.
 02/01/2017 : Continuation du parsing des données.
 03/01/2017 : Finalisation du parsing des données et début de la visualisation.
 04/01/2017 : Visualisation 1 terminée et début de la visualisation des matchs.
+			Limitation à deux visu par manque de temps.
 05/01/2017 : Visualisation Matchs continuée, finalisation de visualisation stats.
 09/01/2017 : Visualisation stats terminée, Visualisation matchs finalisée.
+10/01/2017 : Finalisation des deux visu, Début du rapport.
+			Ajout d'une pie chart à visu match, pour les stratégies (comme dans les FDS)
+11/01/2017 : Terminaison et affinage du rapport. Visu matchs terminée.
+			Ajout de dernière minutes à visu matchs : Défilement automatique du slider pour petite animation.
