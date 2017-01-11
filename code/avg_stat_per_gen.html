@@ -4,6 +4,9 @@
   <title>Visualisation Stats</title>
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <style>
+	html{
+		background-color: lightgrey;
+	}
     body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;}
     .line {
       fill: none;
@@ -45,13 +48,13 @@
 
 <body>
 		
-		<div class="legend_graph_x2" id="l_g_x2">
+		<div class="legend_graph_x2">
 			Taux de Mutation
 		</div>
-		<div class="legend_graph_x" id="l_g_x">
+		<div class="legend_graph_x">
 			Valeur Statistique
 		</div>
-		<div class="legend_graph_y" id="l_g_y">
+		<div class="legend_graph_y" >
 			Generation
 		</div>
 	  <script>
@@ -94,7 +97,7 @@
 				.y(function(d,i) { return 200+i*20; })
 			var lineFix2 = d3.svg.line()
 				.x(function(d,i) { return 120 })
-				.y(function(d,i) { return i*9; })
+				.y(function(d,i) { return i*4; })
 			var lineFix3 = d3.svg.line()
 				.x(function(d,i) { return i*60 })
 				.y(function(d,i) { return 580; })
