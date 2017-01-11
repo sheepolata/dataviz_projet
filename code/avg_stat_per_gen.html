@@ -4,6 +4,9 @@
   <title>Visualisation Stats</title>
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <style>
+	html{
+		background-color: lightgrey;
+	}
     body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;}
     .line {
       fill: none;
@@ -45,13 +48,13 @@
 
 <body>
 		
-		<div class="legend_graph_x2" id="l_g_x2">
+		<div class="legend_graph_x2">
 			Taux de Mutation
 		</div>
-		<div class="legend_graph_x" id="l_g_x">
+		<div class="legend_graph_x">
 			Valeur Statistique
 		</div>
-		<div class="legend_graph_y" id="l_g_y">
+		<div class="legend_graph_y" >
 			Generation
 		</div>
 	  <script>
@@ -94,7 +97,7 @@
 				.y(function(d,i) { return 200+i*20; })
 			var lineFix2 = d3.svg.line()
 				.x(function(d,i) { return 120 })
-				.y(function(d,i) { return i*9; })
+				.y(function(d,i) { return i*4; })
 			var lineFix3 = d3.svg.line()
 				.x(function(d,i) { return i*60 })
 				.y(function(d,i) { return 580; })
@@ -169,16 +172,13 @@
 										   else if (d.stat == "mut") return "orange";
 										   else return "gray";})
 				.on("mouseover", function(d){
-						var mouse = d3.mouse(svg.node()).map(function(d) {
-							return parseInt(d);
-						  });
 						d3.selectAll("circle").filter(function(){return this.id == d.gen}).transition().duration(200).attr("r", tailleCercle*2);
 						d3.selectAll(".value").filter(function(){return this.id == d.gen}).transition(200).style("font-weight", "bold");
 						tooltip.classed('hidden', false)
 							.html("<font color=\"blue\"> Force: " + data["Generations"][d.gen-1]["Force"] + "</font></br><font color=\"red\">Intelligence: " + data["Generations"][d.gen-1]["Intelligence"] + "</font></br><font color=\"green\">Vitesse: " + data["Generations"][d.gen-1]["Vitesse"] + "</font></br><font color=\"orange\">Mutation: " + (data["Generations"][d.gen-1]["Mutation"]*100).toFixed(2) + "%</font>")
 							.attr("id", "tooltip")
-							.attr('style', 'left:' + (this.cx.animVal.value + 20) +
-								'px; top:' + (this.cy.animVal.value - 15)  + 'px')
+							.attr('style', 'left:' + (d3.event.clientX + 20) +
+								'px; top:' + (d3.event.clientY - 15) + 'px')
 						
 					})
 				.on("mouseout", function(d){
