@@ -12,3 +12,4 @@
 			Ajout d'une pie chart à visu match, pour les stratégies (comme dans les FDS)
 11/01/2017 : Terminaison et affinage du rapport. Visu matchs terminée.
 			Ajout de dernière minutes à visu matchs : Défilement automatique du slider pour petite animation.
+12/01/2017 : Présentation. Re-ecriture des FDS due à une perte. Rendu.
